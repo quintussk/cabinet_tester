@@ -1,0 +1,33 @@
+Screen {
+    align: center middle;
+    background: $background;
+}
+
+#start_screen {
+    height: 10;
+    background: $panel;
+    color: $text;
+    border: tall $background;
+    padding: 1;
+}
+
+.Labels{
+    text-style: bold;
+    align: center middle;
+}
+
+LoggingConsole {
+    height: 1fr;
+    max-height: 10;
+    background: $panel-darken-3;
+    padding: 1;
+    dock: bottom;
+
+}
+
+.button_start {
+    width: 100%;
+    height: auto;
+
+}
+

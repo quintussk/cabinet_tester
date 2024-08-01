@@ -1,0 +1,8 @@
+LoggingConsole {
+    height: 1fr;
+    max-height: 10;
+    background: $panel-darken-3;
+    padding: 1;
+    dock: bottom;
+
+}
