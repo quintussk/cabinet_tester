@@ -79,7 +79,6 @@ class OptionListApp(App[None]):
     async def on_item_focus(self, event: ListView.Highlighted) -> None:
         self.selected_label = event.item.id
         logger.debug(f"Geselecteerde schema: {self.selected_label}")
-        self.compose()
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "start":
