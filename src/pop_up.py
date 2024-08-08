@@ -131,7 +131,7 @@ if __name__ == "__main__":
         @on(Button.Pressed, "#prompt")
         async def on_prompt_pressed(self, event: Button.Pressed) -> None:
             result_widget = self.query_one("#result", Static)
-            user_agreed = await self.app.prompt("Do you agree?", 10)  # Geeft de prompttekst en duur (in seconden)
+            await self.app.prompt("Do you agree?", 10)  # Geeft de prompttekst en duur (in seconden)
 
     class MyApp(App, HasPrompt):  # MyApp now has a 'prompt' method via HasPrompt trait
         def compose(self) -> ComposeResult:

@@ -48,13 +48,25 @@ testers = [
 ]    
 
 class Options(Container):
+    selected_scheme: Reactive[str] = reactive("S25")
+
+    def __init__(self, selected_scheme):
+        super().__init__()
+        self.selected_scheme = selected_scheme
+
     def compose(self) -> ComposeResult:
         yield Label("Electric scheme choice: ")
         yield ListView(
-                    *[ListItem(Label(f"{tester[0]}  -  {tester[1]}"), id=tester[0]) for tester in testers],
-                    classes="keuze")
-        with Horizontal(classes="horizon"):
+            *[ListItem(Label(f"{tester[0]}  -  {tester[1]}"), id=tester[0]) for tester in testers],
+            classes="keuze")
+        with Vertical():
             yield Button("Change Scheme", id="Change_Scheme", disabled=True, variant="default")
+            self.response_static = Static(f"Selected Scheme: {self.selected_scheme}", id="response")
+            yield self.response_static
+
+    def update_selected_scheme(self, new_scheme):
+        self.selected_scheme = new_scheme
+        self.response_static.update(f"Selected Scheme: {self.selected_scheme}")
 
 class CableApp(App[None]):
     CSS_PATH = "main.tcss"
@@ -64,12 +76,12 @@ class CableApp(App[None]):
     selected_scheme = "S25"
 
     def compose(self) -> ComposeResult:
-
         yield Header()
         yield Footer()
         with TabbedContent(classes="tabs"):
             with TabPane("Electric scheme", id="tab_electric_scheme"):
-                yield Options(id="controller_tab")
+                self.options_container = Options(selected_scheme=self.selected_scheme)
+                yield self.options_container
             with TabPane("Project", id="tab_project"):          
                 yield TestTree()
 
@@ -88,7 +100,7 @@ class CableApp(App[None]):
         self.selected_label = event.item.id
         logger.debug(f"Geselecteerde schema: {self.selected_label}")
         button_test = self.query_one("#Change_Scheme")
-        if self.selected_scheme is not self.selected_label:
+        if self.selected_scheme != self.selected_label:
             button_test.disabled = False
             button_test.variant = "success"
         else:
@@ -105,6 +117,7 @@ class CableApp(App[None]):
                 logger.debug(f"Bijbehorende bestand: {self.selected_file}")
                 CreateProject().create(self.selected_file)
                 self.query(TestTree).remove()
+                self.options_container.update_selected_scheme(self.selected_scheme)
                 self.mount(TestTree())
         button_test = self.query_one("#Change_Scheme")
         button_test.disabled = True
@@ -112,8 +125,7 @@ class CableApp(App[None]):
         
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "start":
-            # self.push_screen(AantalMensen())
-            self.push_screen(TestScreen(totest = self.selected_label))
+            self.push_screen(TestScreen(totest=self.selected_label))
 
 if __name__ == "__main__":
     CableApp().run()

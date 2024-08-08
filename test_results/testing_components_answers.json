@@ -1,1 +1,692 @@
-{}
+{
+    "10CON1": [
+        {
+            "from_terminal": 1,
+            "to_part": "2002-1401",
+            "to_mark": "X33",
+            "to_terminal": 6.2
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "2002-2201",
+            "to_mark": "C20.1",
+            "to_terminal": 5
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI a.6"
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 4.3
+        },
+        {
+            "from_terminal": 5,
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "AI a.0"
+        },
+        {
+            "from_terminal": 6,
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 4.1
+        },
+        {
+            "from_terminal": 7,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 8,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 9,
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI a.5"
+        },
+        {
+            "from_terminal": 10,
+            "to_part": "6ES7231-5QD32-0XB0",
+            "to_mark": "6A3",
+            "to_terminal": "DQ a.5"
+        },
+        {
+            "from_terminal": 11,
+            "to_part": "2002-2201",
+            "to_mark": "X9",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": 12,
+            "to_part": "2002-2201",
+            "to_mark": "X9",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI b.0"
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI b.1"
+        },
+        {
+            "from_terminal": 15,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 16,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "21C1": [
+        {
+            "from_terminal": "A1",
+            "to_part": "Contactor heatzone 1",
+            "to_mark": "12K1",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1403",
+            "to_mark": "X13",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A3",
+            "to_part": "Contactor heatzone 1",
+            "to_mark": "12K1",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A4",
+            "to_part": "2002-1403",
+            "to_mark": "X13",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A5",
+            "to_part": "Contactor heatzone 2",
+            "to_mark": "12K2",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A6",
+            "to_part": "2002-1403",
+            "to_mark": "X13",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A7",
+            "to_part": "Contactor heatzone 2",
+            "to_mark": "12K2",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A8",
+            "to_part": "2002-1403",
+            "to_mark": "X13",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A9",
+            "to_part": "Contactor heatzone 3",
+            "to_mark": "12K3",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B2",
+            "to_part": "2002-1403",
+            "to_mark": "X13",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "B3",
+            "to_part": "Contactor heatzone 3",
+            "to_mark": "12K3",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B4",
+            "to_part": "2002-1403",
+            "to_mark": "X13",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "B5",
+            "to_part": "Contactor heatzone 4",
+            "to_mark": "12K4",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B6",
+            "to_part": "2002-1403",
+            "to_mark": "X13",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "B7",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "B8",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C1",
+            "to_part": "Relais vibration motor",
+            "to_mark": "14K1",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": "C2",
+            "to_part": "2002-1403",
+            "to_mark": "X31",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "C3",
+            "to_part": "2002-1407",
+            "to_mark": "X31",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "C4",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C6",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C7",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C8",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C9",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2002-1407",
+            "to_mark": "X31",
+            "to_terminal": "PE"
+        }
+    ],
+    "21C2": [
+        {
+            "from_terminal": "A1",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.0"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.0"
+        },
+        {
+            "from_terminal": "A3",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.1"
+        },
+        {
+            "from_terminal": "A4",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.1"
+        },
+        {
+            "from_terminal": "A5",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.2"
+        },
+        {
+            "from_terminal": "A6",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.2"
+        },
+        {
+            "from_terminal": "A7",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.3"
+        },
+        {
+            "from_terminal": "A8",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A2",
+            "to_terminal": "AI.3"
+        },
+        {
+            "from_terminal": "A9",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "A10",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "B1",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A4",
+            "to_terminal": "AI.0 (M+)"
+        },
+        {
+            "from_terminal": "B2",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A4",
+            "to_terminal": "AI.0 (M-)"
+        },
+        {
+            "from_terminal": "B3",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A4",
+            "to_terminal": "AI.0 (T+)"
+        },
+        {
+            "from_terminal": "B4",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A4",
+            "to_terminal": "AI.0 (T-)"
+        },
+        {
+            "from_terminal": "B5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "B6",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "B7",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "B8",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "B9",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C1",
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI a.2"
+        },
+        {
+            "from_terminal": "C2",
+            "to_part": "2002-1401",
+            "to_mark": "X33",
+            "to_terminal": "6.3"
+        },
+        {
+            "from_terminal": "C3",
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 5.2
+        },
+        {
+            "from_terminal": "C4",
+            "to_part": "SIMATIC S7-1200 - TC",
+            "to_mark": "6A1",
+            "to_terminal": "DI a.3"
+        },
+        {
+            "from_terminal": "C5",
+            "to_part": "2002-1401",
+            "to_mark": "X33",
+            "to_terminal": "6.1"
+        },
+        {
+            "from_terminal": "C6",
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 5.4
+        },
+        {
+            "from_terminal": "C7",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C8",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C9",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C10",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D1",
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "X33",
+            "to_terminal": 1.4
+        },
+        {
+            "from_terminal": "D2",
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI b.2"
+        },
+        {
+            "from_terminal": "D3",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D4",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D6",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D7",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D8",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D9",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "D10",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "19C1": [
+        {
+            "from_terminal": "pin 1",
+            "to_part": "6ES7231-5QD32-0XB0",
+            "to_mark": "6A3",
+            "to_terminal": "DQ a.4"
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 3.1
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "2002-1401",
+            "to_mark": "X31",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "pin 4",
+            "to_part": "2002-1403",
+            "to_mark": "X31",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "pin 5",
+            "to_part": "2002-1401",
+            "to_mark": "X33",
+            "to_terminal": 4.3
+        },
+        {
+            "from_terminal": "pin 6",
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 4.2
+        },
+        {
+            "from_terminal": "pin 7",
+            "to_part": "2002-1407",
+            "to_mark": "X31",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "pin 8",
+            "to_part": "2002-1401",
+            "to_mark": "X33",
+            "to_terminal": 4.4
+        },
+        {
+            "from_terminal": "pin 9",
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI a.7"
+        },
+        {
+            "from_terminal": "pin 10",
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DQ a.7"
+        },
+        {
+            "from_terminal": "pin 11",
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 4.4
+        },
+        {
+            "from_terminal": "pin 12",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "17C1": [
+        {
+            "from_terminal": "pin 1",
+            "to_part": "Relais pump and fans",
+            "to_mark": "17K1",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "2002-1403",
+            "to_mark": "X31",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "2002-1407",
+            "to_mark": "X31",
+            "to_terminal": "PE"
+        }
+    ],
+    "16C1": [
+        {
+            "from_terminal": "pin 1",
+            "to_part": "3RT2015-1BB42",
+            "to_mark": "16PC1",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "3RT2015-1BB42",
+            "to_mark": "16PC1",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "3RT2015-1BB42",
+            "to_mark": "16PC1",
+            "to_terminal": 6
+        },
+        {
+            "from_terminal": "pin 4",
+            "to_part": "2002-1407",
+            "to_mark": "X31",
+            "to_terminal": "PE"
+        }
+    ],
+    "8C1": [
+        {
+            "from_terminal": 1,
+            "to_part": "2002-1401",
+            "to_mark": "X33",
+            "to_terminal": 5.2
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "2002-1401",
+            "to_mark": "X34",
+            "to_terminal": 3.4
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "DI a.4"
+        }
+    ],
+    "20C1": [
+        {
+            "from_terminal": 1,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "2002-2201",
+            "to_mark": "C20.1",
+            "to_terminal": 6
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "2002-2201",
+            "to_mark": "C20.1",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "2002-2201",
+            "to_mark": "C20.1",
+            "to_terminal": 2
+        }
+    ],
+    "20C2": [
+        {
+            "from_terminal": 1,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "2002-2201",
+            "to_mark": "C20.2",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "2002-2201",
+            "to_mark": "C20.2",
+            "to_terminal": 2
+        }
+    ]
+}
