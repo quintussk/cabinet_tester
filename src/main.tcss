@@ -31,3 +31,8 @@ LoggingConsole {
 
 }
 
+
+Button {
+    dock: bottom;
+}
+

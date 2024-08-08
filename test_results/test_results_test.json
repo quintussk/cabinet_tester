@@ -1,0 +1,206 @@
+{
+    "cabinet_name": "S25 extruder FOB unit with S7-1200 PLCs",
+    "test_results": {
+        "10CON1": [
+            {
+                "terminal": "1",
+                "passed": true,
+                "answer": "Should go to mark: X33 and terminal 6.2"
+            },
+            {
+                "terminal": "2",
+                "passed": true,
+                "answer": "Should go to mark: C20.1 and terminal 5"
+            },
+            {
+                "terminal": "3",
+                "passed": true,
+                "answer": "Should go to mark: 6A1 and terminal DI a.6"
+            },
+            {
+                "terminal": "4",
+                "passed": true,
+                "answer": "Should go to mark: X34 and terminal 4.3"
+            },
+            {
+                "terminal": "5",
+                "passed": true,
+                "answer": "Should go to mark: 6A1 and terminal AI a.0"
+            },
+            {
+                "terminal": "6",
+                "passed": true,
+                "answer": "Should go to mark: X34 and terminal 4.1"
+            },
+            {
+                "terminal": "9",
+                "passed": true,
+                "answer": "Should go to mark: 6A1 and terminal DI a.5"
+            },
+            {
+                "terminal": "10",
+                "passed": true,
+                "answer": "Should go to mark: 6A3 and terminal DQ a.5"
+            },
+            {
+                "terminal": "11",
+                "passed": true,
+                "answer": "Should go to mark: X9 and terminal 2"
+            },
+            {
+                "terminal": "12",
+                "passed": true,
+                "answer": "Should go to mark: X9 and terminal 4"
+            },
+            {
+                "terminal": "13",
+                "passed": true,
+                "answer": "Should go to mark: 6A1 and terminal DI b.0"
+            },
+            {
+                "terminal": "14",
+                "passed": true,
+                "answer": "Should go to mark: 6A1 and terminal DI b.1"
+            }
+        ],
+        "21C1": [
+            {
+                "terminal": "A1",
+                "passed": true,
+                "answer": "Should go to mark: 12K1 and terminal 2T"
+            },
+            {
+                "terminal": "A2",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "A3",
+                "passed": true,
+                "answer": "Should go to mark: 12K1 and terminal 2T"
+            },
+            {
+                "terminal": "A4",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "A5",
+                "passed": true,
+                "answer": "Should go to mark: 12K2 and terminal 2T"
+            },
+            {
+                "terminal": "A6",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "A7",
+                "passed": true,
+                "answer": "Should go to mark: 12K2 and terminal 2T"
+            },
+            {
+                "terminal": "A8",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "A9",
+                "passed": true,
+                "answer": "Should go to mark: 12K3 and terminal 2T"
+            },
+            {
+                "terminal": "B2",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "B3",
+                "passed": true,
+                "answer": "Should go to mark: 12K3 and terminal 2T"
+            },
+            {
+                "terminal": "B4",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "B5",
+                "passed": true,
+                "answer": "Should go to mark: 12K4 and terminal 2T"
+            },
+            {
+                "terminal": "B6",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "C1",
+                "passed": true,
+                "answer": "Should go to mark: 14K1 and terminal 14"
+            },
+            {
+                "terminal": "C2",
+                "passed": true,
+                "answer": "Should go to mark: X31 and terminal N"
+            },
+            {
+                "terminal": "C3",
+                "passed": true,
+                "answer": "Should go to mark: X31 and terminal PE"
+            },
+            {
+                "terminal": "PE",
+                "passed": true,
+                "answer": "Should go to mark: X31 and terminal PE"
+            },
+            {
+                "terminal": "B7",
+                "passed": true,
+                "answer": "Should go to mark: 12K5 and terminal 2T"
+            },
+            {
+                "terminal": "B8",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "C4",
+                "passed": true,
+                "answer": "Should go to mark: 12K5 and terminal 2T"
+            },
+            {
+                "terminal": "C5",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "C6",
+                "passed": true,
+                "answer": "Should go to mark: 12K5 and terminal 2T"
+            },
+            {
+                "terminal": "C7",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            },
+            {
+                "terminal": "C8",
+                "passed": true,
+                "answer": "Should go to mark: 12K5 and terminal 2T"
+            },
+            {
+                "terminal": "C9",
+                "passed": true,
+                "answer": "Should go to mark: X13 and terminal N"
+            }
+        ],
+        "21C2": [],
+        "19C1": [],
+        "17C1": [],
+        "16C1": [],
+        "8C1": [],
+        "20C1": [],
+        "20C2": []
+    }
+}

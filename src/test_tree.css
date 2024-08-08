@@ -1,0 +1,8 @@
+Button {
+
+    dock: bottom;
+}
+
+TestTree>Horizontal {
+    height: 3;
+}

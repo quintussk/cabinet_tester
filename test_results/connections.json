@@ -1,0 +1,2634 @@
+{
+    "X6": [
+        {
+            "from_terminal": 1.1,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "1/L1"
+        },
+        {
+            "from_terminal": 2.1,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "3/L2"
+        },
+        {
+            "from_terminal": 3.1,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "5/L3"
+        },
+        {
+            "from_terminal": 4.1,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": 5.1,
+            "to_part": "Ground",
+            "to_mark": "X2",
+            "to_terminal": 14.1
+        },
+        {
+            "from_terminal": 5.2,
+            "to_part": "Line reactor for S120 drives",
+            "to_mark": "T1",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": 6.1,
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": 5.1,
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": 1.2,
+            "to_part": "CEE power plug",
+            "to_mark": "X700",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 2.2,
+            "to_part": "CEE power plug",
+            "to_mark": "X700",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 3.2,
+            "to_part": "CEE power plug",
+            "to_mark": "X700",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 4.2,
+            "to_part": "CEE power plug",
+            "to_mark": "X700",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 5.2,
+            "to_part": "CEE power plug",
+            "to_mark": "X700",
+            "to_terminal": NaN
+        }
+    ],
+    "Q2": [
+        {
+            "from_terminal": "1/L1",
+            "to_part": "2010-1201",
+            "to_mark": "X6",
+            "to_terminal": 1.1
+        },
+        {
+            "from_terminal": "3/L2",
+            "to_part": "2010-1201",
+            "to_mark": "X6",
+            "to_terminal": 2.1
+        },
+        {
+            "from_terminal": "5/L3",
+            "to_part": "2010-1201",
+            "to_mark": "X6",
+            "to_terminal": 3.1
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "2010-1204",
+            "to_mark": "X6",
+            "to_terminal": 4.1
+        },
+        {
+            "from_terminal": "2/T1",
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": "4/T2",
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 3
+        },
+        {
+            "from_terminal": "6/T3",
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 5
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 7
+        }
+    ],
+    "X2": [
+        {
+            "from_terminal": 14.1,
+            "to_part": "2010-1207",
+            "to_mark": "X6",
+            "to_terminal": 5.1
+        },
+        {
+            "from_terminal": 1.2,
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": 5.2,
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": 8.2,
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 6
+        },
+        {
+            "from_terminal": 11.2,
+            "to_part": "Main fuse",
+            "to_mark": "Q3",
+            "to_terminal": 8
+        },
+        {
+            "from_terminal": "L1",
+            "to_part": "5SY4106-7",
+            "to_mark": "Q4",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "PSU300S",
+            "to_mark": "G1",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "PSU300S",
+            "to_mark": "G1",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "L1",
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": "1/L1"
+        },
+        {
+            "from_terminal": "L2",
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": "3/L2"
+        },
+        {
+            "from_terminal": "L3",
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": "5/L3"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": 1.2
+        },
+        {
+            "from_terminal": "L1",
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": "1/L1"
+        },
+        {
+            "from_terminal": "L2",
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": "3/L2"
+        },
+        {
+            "from_terminal": "L3",
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": "5/L3"
+        },
+        {
+            "from_terminal": "L1",
+            "to_part": "5SY4102-7",
+            "to_mark": "Q7",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": "L3",
+            "to_part": "5SY4103-7",
+            "to_mark": "Q8",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "GND"
+        },
+        {
+            "from_terminal": "L1",
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": "1/L1"
+        },
+        {
+            "from_terminal": "L2",
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": "3/L2"
+        },
+        {
+            "from_terminal": "L3",
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": "5/L3"
+        },
+        {
+            "from_terminal": "L2",
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 3"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 4"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 7"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CKF 03",
+            "to_mark": "X601",
+            "to_terminal": "pin 2"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "ILME CKF 03",
+            "to_mark": "X601",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "ILME CQF 05",
+            "to_mark": "X602",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "890-703",
+            "to_mark": "X760",
+            "to_terminal": "PE"
+        }
+    ],
+    "Q3": [
+        {
+            "from_terminal": 1,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "2/T1"
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "4/T2"
+        },
+        {
+            "from_terminal": 5,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "6/T3"
+        },
+        {
+            "from_terminal": 7,
+            "to_part": "Main power switch in panel door",
+            "to_mark": "Q2",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": 1.2
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": 5.2
+        },
+        {
+            "from_terminal": 6,
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": 8.2
+        },
+        {
+            "from_terminal": 8,
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": 11.2
+        }
+    ],
+    "Q4": [
+        {
+            "from_terminal": 1,
+            "to_part": "2004-1401",
+            "to_mark": "X2",
+            "to_terminal": "L1"
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "PSU300S",
+            "to_mark": "G1",
+            "to_terminal": "L1"
+        }
+    ],
+    "G1": [
+        {
+            "from_terminal": "L1",
+            "to_part": "5SY4106-7",
+            "to_mark": "Q4",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "2004-1403",
+            "to_mark": "X2",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2004-1407",
+            "to_mark": "X2",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "+",
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": "24V+"
+        },
+        {
+            "from_terminal": "+",
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": "24V+"
+        },
+        {
+            "from_terminal": "-",
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": "0V"
+        },
+        {
+            "from_terminal": "-",
+            "to_part": "2002-1201",
+            "to_mark": "X4",
+            "to_terminal": 1.1
+        }
+    ],
+    "G2": [
+        {
+            "from_terminal": "24V+",
+            "to_part": "PSU300S",
+            "to_mark": "G1",
+            "to_terminal": "+"
+        },
+        {
+            "from_terminal": "24V+",
+            "to_part": "PSU300S",
+            "to_mark": "G1",
+            "to_terminal": "+"
+        },
+        {
+            "from_terminal": "0V",
+            "to_part": "PSU300S",
+            "to_mark": "G1",
+            "to_terminal": "-"
+        },
+        {
+            "from_terminal": "0V",
+            "to_part": "2002-1201",
+            "to_mark": "X4",
+            "to_terminal": 1.2
+        },
+        {
+            "from_terminal": 1,
+            "to_part": "2002-1201",
+            "to_mark": "X3",
+            "to_terminal": 1.1
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "2002-1201",
+            "to_mark": "X3",
+            "to_terminal": 3.1
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "2002-1201",
+            "to_mark": "X3",
+            "to_terminal": 5.1
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "2002-1201",
+            "to_mark": "X3",
+            "to_terminal": 7.1
+        },
+        {
+            "from_terminal": "S",
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 16
+        }
+    ],
+    "X4": [
+        {
+            "from_terminal": 1.1,
+            "to_part": "PSU300S",
+            "to_mark": "G1",
+            "to_terminal": "-"
+        },
+        {
+            "from_terminal": 1.2,
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": "0V"
+        },
+        {
+            "from_terminal": 2.1,
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "0V"
+        },
+        {
+            "from_terminal": 3.3,
+            "to_part": "Control unit drive",
+            "to_mark": "N6",
+            "to_terminal": "M"
+        },
+        {
+            "from_terminal": "2.2",
+            "to_part": "SIMATIC S7-1500",
+            "to_mark": "N1",
+            "to_terminal": "0V"
+        },
+        {
+            "from_terminal": "2.3",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 10
+        },
+        {
+            "from_terminal": "3.2",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 20
+        },
+        {
+            "from_terminal": "3.3",
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 20
+        },
+        {
+            "from_terminal": 5.4,
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 2"
+        },
+        {
+            "from_terminal": 6.2,
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 6"
+        },
+        {
+            "from_terminal": 6.4,
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 11"
+        },
+        {
+            "from_terminal": 3.4,
+            "to_part": "IFM E12408",
+            "to_mark": "X620",
+            "to_terminal": "pin 3"
+        },
+        {
+            "from_terminal": 4.2,
+            "to_part": "IFM E12408",
+            "to_mark": "X621",
+            "to_terminal": "pin 3"
+        },
+        {
+            "from_terminal": 3.2,
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C4"
+        },
+        {
+            "from_terminal": 3.4,
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C6"
+        },
+        {
+            "from_terminal": 3.3,
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K1",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": 4.1,
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K2",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": 4.3,
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K3",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": 5.1,
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K4",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": 2.3,
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "0V"
+        },
+        {
+            "from_terminal": 3.1,
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "0V"
+        },
+        {
+            "from_terminal": 4.4,
+            "to_part": "Omron 111-3042",
+            "to_mark": "K7",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": 5.2,
+            "to_part": "Omron 111-3042",
+            "to_mark": "K8",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": 5.3,
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K9",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": 6.3,
+            "to_part": "Top cooling fan (side panel)",
+            "to_mark": "C1",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 5.4,
+            "to_part": "Bottom cooling fan (door)",
+            "to_mark": "C2",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 7.2,
+            "to_part": 1135752,
+            "to_mark": "Q10",
+            "to_terminal": "IN- 3.1"
+        },
+        {
+            "from_terminal": 7.4,
+            "to_part": 2900376,
+            "to_mark": "K10",
+            "to_terminal": "A2-"
+        },
+        {
+            "from_terminal": 7.5,
+            "to_part": "890-703",
+            "to_mark": "X760",
+            "to_terminal": "N"
+        }
+    ],
+    "X3": [
+        {
+            "from_terminal": 1.1,
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": 3.1,
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": 5.1,
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": 3
+        },
+        {
+            "from_terminal": 7.1,
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": 1.4,
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "24V"
+        },
+        {
+            "from_terminal": 3.3,
+            "to_part": "Control unit drive",
+            "to_mark": "N6",
+            "to_terminal": "+"
+        },
+        {
+            "from_terminal": "2.2",
+            "to_part": "SIMATIC S7-1500",
+            "to_mark": "N1",
+            "to_terminal": "+24V"
+        },
+        {
+            "from_terminal": "2.3",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 9
+        },
+        {
+            "from_terminal": "3.2",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 19
+        },
+        {
+            "from_terminal": 5.2,
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 5"
+        },
+        {
+            "from_terminal": 5.4,
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 8"
+        },
+        {
+            "from_terminal": 3.1,
+            "to_part": "Emergency button",
+            "to_mark": "X610",
+            "to_terminal": 11
+        },
+        {
+            "from_terminal": 3.4,
+            "to_part": "Emergency button",
+            "to_mark": "X610",
+            "to_terminal": 21
+        },
+        {
+            "from_terminal": 5.3,
+            "to_part": "IFM E12408",
+            "to_mark": "X622",
+            "to_terminal": "pin 1"
+        },
+        {
+            "from_terminal": 7.2,
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C3"
+        },
+        {
+            "from_terminal": 7.4,
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C5"
+        },
+        {
+            "from_terminal": 2.4,
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": 2.3,
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": 1.3,
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": "tbd",
+            "to_part": "Temperature controller",
+            "to_mark": NaN,
+            "to_terminal": "L"
+        },
+        {
+            "from_terminal": 8.1,
+            "to_part": 1135752,
+            "to_mark": "Q10",
+            "to_terminal": "IN+ 1.1"
+        }
+    ],
+    "Q5": [
+        {
+            "from_terminal": "1/L1",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L1"
+        },
+        {
+            "from_terminal": "3/L2",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "5/L3",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L3"
+        },
+        {
+            "from_terminal": "2/T1",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "1/L1"
+        },
+        {
+            "from_terminal": "4/T2",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "3/L2"
+        },
+        {
+            "from_terminal": "6/T3",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "5/L3"
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": 13
+        }
+    ],
+    "K5": [
+        {
+            "from_terminal": "1/L1",
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": "2/T1"
+        },
+        {
+            "from_terminal": "3/L2",
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": "4/T2"
+        },
+        {
+            "from_terminal": "5/L3",
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": "6/T3"
+        },
+        {
+            "from_terminal": "2/T1",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K1",
+            "to_terminal": "1L"
+        },
+        {
+            "from_terminal": "4/T2",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K2",
+            "to_terminal": "1L"
+        },
+        {
+            "from_terminal": "4/T2",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K9",
+            "to_terminal": "1L"
+        },
+        {
+            "from_terminal": "6/T3",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K3",
+            "to_terminal": "1L"
+        },
+        {
+            "from_terminal": "6/T3",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K4",
+            "to_terminal": "1L"
+        },
+        {
+            "from_terminal": "+A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 2.3
+        },
+        {
+            "from_terminal": "0V",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 2.3
+        }
+    ],
+    "K1": [
+        {
+            "from_terminal": "1L",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "2/T1"
+        },
+        {
+            "from_terminal": "+A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A1"
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A3"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 3.3
+        }
+    ],
+    "K2": [
+        {
+            "from_terminal": "1L",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "4/T2"
+        },
+        {
+            "from_terminal": "+A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 3
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A5"
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A7"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 4.1
+        }
+    ],
+    "K9": [
+        {
+            "from_terminal": "1L",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "4/T2"
+        },
+        {
+            "from_terminal": "+A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 7
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C1"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 5.3
+        }
+    ],
+    "K3": [
+        {
+            "from_terminal": "1L",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "6/T3"
+        },
+        {
+            "from_terminal": "+A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A9"
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "B3"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 4.3
+        }
+    ],
+    "K4": [
+        {
+            "from_terminal": "1L",
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": "6/T3"
+        },
+        {
+            "from_terminal": "+A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 5
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "B5"
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "B7"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 5.1
+        }
+    ],
+    "X21": [
+        {
+            "from_terminal": 1.2,
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A2"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A4"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A6"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "A8"
+        },
+        {
+            "from_terminal": "2T",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "B2"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "B4"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "B6"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "B8"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C2"
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C9"
+        }
+    ],
+    "Q6": [
+        {
+            "from_terminal": "1/L1",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L1"
+        },
+        {
+            "from_terminal": "3/L2",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "5/L3",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L3"
+        },
+        {
+            "from_terminal": "1/L1",
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "L1"
+        },
+        {
+            "from_terminal": "3/L2",
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "5/L3",
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "L3"
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 3
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 2.4
+        }
+    ],
+    "K6": [
+        {
+            "from_terminal": "L1",
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": "1/L1"
+        },
+        {
+            "from_terminal": "L2",
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": "3/L2"
+        },
+        {
+            "from_terminal": "L3",
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": "5/L3"
+        },
+        {
+            "from_terminal": "+A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 11
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 12
+        },
+        {
+            "from_terminal": "T1",
+            "to_part": "ILME CQF 05",
+            "to_mark": "X602",
+            "to_terminal": "pin 1"
+        },
+        {
+            "from_terminal": "T2",
+            "to_part": "ILME CQF 05",
+            "to_mark": "X602",
+            "to_terminal": "pin 2"
+        },
+        {
+            "from_terminal": "T3",
+            "to_part": "ILME CQF 05",
+            "to_mark": "X602",
+            "to_terminal": "pin 3"
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": "0V",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 3.1
+        }
+    ],
+    "Q7": [
+        {
+            "from_terminal": 1,
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L1"
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "Omron 111-3042",
+            "to_mark": "K7",
+            "to_terminal": 11
+        }
+    ],
+    "K7": [
+        {
+            "from_terminal": 11,
+            "to_part": "5SY4102-7",
+            "to_mark": "Q7",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": "+",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 8
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C8"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 4.4
+        }
+    ],
+    "Q8": [
+        {
+            "from_terminal": 1,
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L3"
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "Omron 111-3042",
+            "to_mark": "K8",
+            "to_terminal": 11
+        }
+    ],
+    "K8": [
+        {
+            "from_terminal": 11,
+            "to_part": "5SY4103-7",
+            "to_mark": "Q8",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": "+",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 12
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "ILME CKF 03",
+            "to_mark": "X601",
+            "to_terminal": "pin 1"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 5.2
+        }
+    ],
+    "Q1": [
+        {
+            "from_terminal": "24V",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 1.4
+        },
+        {
+            "from_terminal": "0V",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 2.1
+        },
+        {
+            "from_terminal": "GND",
+            "to_part": "2010-1307",
+            "to_mark": "X2",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "X1",
+            "to_part": "SIMATIC S7-1500",
+            "to_mark": "N1",
+            "to_terminal": "X1 (profinet)"
+        },
+        {
+            "from_terminal": "X3 (profinet)",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "X4 (profinet)",
+            "to_part": "Servo drive",
+            "to_mark": "N6",
+            "to_terminal": "X100 DQ"
+        },
+        {
+            "from_terminal": "X5 (profinet)",
+            "to_part": "HMI",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "X6 (profinet)",
+            "to_part": "Side panel connector",
+            "to_mark": "X741",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "X7 (profinet)",
+            "to_part": "Side panel connector",
+            "to_mark": "X742",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "X8 (profinet)",
+            "to_part": "Side panel connector",
+            "to_mark": "X720",
+            "to_terminal": NaN
+        }
+    ],
+    "Q9": [
+        {
+            "from_terminal": "1/L1",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L1"
+        },
+        {
+            "from_terminal": "3/L2",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "5/L3",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L3"
+        },
+        {
+            "from_terminal": "2/T1",
+            "to_part": "Line reactor for S120 drive",
+            "to_mark": "T1",
+            "to_terminal": "2L1"
+        },
+        {
+            "from_terminal": "4/T2",
+            "to_part": "Line reactor for S120 drive",
+            "to_mark": "T1",
+            "to_terminal": "2L2"
+        },
+        {
+            "from_terminal": "6/T3",
+            "to_part": "Line reactor for S120 drive",
+            "to_mark": "T1",
+            "to_terminal": "2L3"
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 11
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 1.3
+        }
+    ],
+    "T1": [
+        {
+            "from_terminal": "2L1",
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": "2/T1"
+        },
+        {
+            "from_terminal": "2L2",
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": "4/T2"
+        },
+        {
+            "from_terminal": "2L3",
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": "6/T3"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2010-1307",
+            "to_mark": "X6",
+            "to_terminal": 5.2
+        },
+        {
+            "from_terminal": "2L1",
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "L1"
+        },
+        {
+            "from_terminal": "2L2",
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "2L3",
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "L3"
+        }
+    ],
+    "D1": [
+        {
+            "from_terminal": "L1",
+            "to_part": "Line reactor for S120 drives",
+            "to_mark": "T1",
+            "to_terminal": "2L1"
+        },
+        {
+            "from_terminal": "L2",
+            "to_part": "Line reactor for S120 drives",
+            "to_mark": "T1",
+            "to_terminal": "2L2"
+        },
+        {
+            "from_terminal": "L3",
+            "to_part": "Line reactor for S120 drives",
+            "to_mark": "T1",
+            "to_terminal": "2L3"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2010-1307",
+            "to_mark": "X6",
+            "to_terminal": 6.1
+        },
+        {
+            "from_terminal": "U",
+            "to_part": "Servo connection cable",
+            "to_mark": "X731",
+            "to_terminal": "U"
+        },
+        {
+            "from_terminal": "V",
+            "to_part": "Servo connection cable",
+            "to_mark": "X731",
+            "to_terminal": "V"
+        },
+        {
+            "from_terminal": "W",
+            "to_part": "Servo connection cable",
+            "to_mark": "X731",
+            "to_terminal": "W"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "Servo connection cable",
+            "to_mark": "X731",
+            "to_terminal": "PE"
+        }
+    ],
+    "X731": [
+        {
+            "from_terminal": "U",
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "U"
+        },
+        {
+            "from_terminal": "V",
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "V"
+        },
+        {
+            "from_terminal": "W",
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "W"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "Servo Drive",
+            "to_mark": "D1",
+            "to_terminal": "PE"
+        }
+    ],
+    "N6": [
+        {
+            "from_terminal": "+",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 3.3
+        },
+        {
+            "from_terminal": "M",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 3.3
+        },
+        {
+            "from_terminal": "X150 P2",
+            "to_part": "Servo control connector in side panel",
+            "to_mark": "X730",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "X100 DQ",
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "X4 (profinet)"
+        }
+    ],
+    "X730": [
+        {
+            "from_terminal": NaN,
+            "to_part": "Control unit drive",
+            "to_mark": "N6",
+            "to_terminal": "X150 P2"
+        }
+    ],
+    "N1": [
+        {
+            "from_terminal": "+24V",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": "2.2"
+        },
+        {
+            "from_terminal": "0V",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": "2.2"
+        },
+        {
+            "from_terminal": "X1 (profinet)",
+            "to_part": "Ethernet switch",
+            "to_mark": "Q1",
+            "to_terminal": "X1"
+        },
+        {
+            "from_terminal": "X2 (profinet)",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "P2",
+            "to_part": 111600,
+            "to_mark": "Q1 ",
+            "to_terminal": "X1 (profinet)"
+        }
+    ],
+    "NaN": [
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500",
+            "to_mark": "N1",
+            "to_terminal": "X2 (profinet)"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 6
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": 22,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 6
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 7
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 9
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 10
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 18
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 19
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "ILME CQF 12",
+            "to_mark": "X600",
+            "to_terminal": "pin 12"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "ILME CKF 03",
+            "to_mark": "X601",
+            "to_terminal": "pin 3"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X620",
+            "to_terminal": "pin 1"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X620",
+            "to_terminal": "pin 5"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X621",
+            "to_terminal": "pin 1"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X621",
+            "to_terminal": "pin 2"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X621",
+            "to_terminal": "pin 5"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X622",
+            "to_terminal": "pin 2"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X622",
+            "to_terminal": "pin 3"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "IFM E12408",
+            "to_mark": "X622",
+            "to_terminal": "pin 5"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "ILME CDF 25 (Y)",
+            "to_mark": "X710",
+            "to_terminal": "C7"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "ILME CDF 25 Z (X)",
+            "to_mark": "X710",
+            "to_terminal": "A1 - C9 + PE"
+        },
+        {
+            "from_terminal": "L",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": "tbd"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "X3 (profinet)"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "X5 (profinet)"
+        }
+    ],
+    "N4": [
+        {
+            "from_terminal": 1,
+            "to_part": "Contactor heaters",
+            "to_mark": "K5",
+            "to_terminal": "+A1"
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "Contactor heatzone 1",
+            "to_mark": "K1",
+            "to_terminal": "+A1"
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "Contactor heatzone 2",
+            "to_mark": "K2",
+            "to_terminal": "+A1"
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "Contactor heatzone 3",
+            "to_mark": "K3",
+            "to_terminal": "+A1"
+        },
+        {
+            "from_terminal": 5,
+            "to_part": "Contactor heatzone 4",
+            "to_mark": "K4",
+            "to_terminal": "+A1"
+        },
+        {
+            "from_terminal": 6,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 7,
+            "to_part": "Contactor heatzone nozzle",
+            "to_mark": "K9",
+            "to_terminal": "+A1"
+        },
+        {
+            "from_terminal": 8,
+            "to_part": "Omron 111-3042",
+            "to_mark": "K7",
+            "to_terminal": "+"
+        },
+        {
+            "from_terminal": 9,
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": "2.3"
+        },
+        {
+            "from_terminal": 10,
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": "2.3"
+        },
+        {
+            "from_terminal": 11,
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "+A1"
+        },
+        {
+            "from_terminal": 12,
+            "to_part": "Omron 111-3042",
+            "to_mark": "K8",
+            "to_terminal": "+"
+        },
+        {
+            "from_terminal": 13,
+            "to_part": 2900376,
+            "to_mark": "A1",
+            "to_terminal": "black wire"
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "IFM E12408",
+            "to_mark": "X620",
+            "to_terminal": "white wire"
+        },
+        {
+            "from_terminal": 15,
+            "to_part": "IFM E12408",
+            "to_mark": "X621",
+            "to_terminal": "black wire"
+        },
+        {
+            "from_terminal": 16,
+            "to_part": "ILME CKF 03",
+            "to_mark": "X600",
+            "to_terminal": "pin 1"
+        },
+        {
+            "from_terminal": 17,
+            "to_part": "ILME CKF 03",
+            "to_mark": "X600",
+            "to_terminal": "pin 10"
+        },
+        {
+            "from_terminal": 18,
+            "to_part": 2900376,
+            "to_mark": "K10",
+            "to_terminal": "A1"
+        },
+        {
+            "from_terminal": 19,
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": "3.2"
+        },
+        {
+            "from_terminal": 20,
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": "3.2"
+        }
+    ],
+    "A1": [
+        {
+            "from_terminal": "black wire",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 13
+        }
+    ],
+    "X620": [
+        {
+            "from_terminal": "white wire",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": "pin 1",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 3.4
+        },
+        {
+            "from_terminal": "pin 5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "X621": [
+        {
+            "from_terminal": "black wire",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 15
+        },
+        {
+            "from_terminal": "pin 1",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 4.2
+        },
+        {
+            "from_terminal": "pin 5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "X600": [
+        {
+            "from_terminal": "pin 1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 16
+        },
+        {
+            "from_terminal": "pin 10",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 17
+        },
+        {
+            "from_terminal": "pin 9",
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 8
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 5.4
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "pin 4",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "pin 5",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 5.2
+        },
+        {
+            "from_terminal": "pin 6",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 6.2
+        },
+        {
+            "from_terminal": "pin 7",
+            "to_part": "2010-1307",
+            "to_mark": "X2",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": "pin 8",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 5.4
+        },
+        {
+            "from_terminal": "pin 11",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 6.4
+        },
+        {
+            "from_terminal": "pin 12",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "K10": [
+        {
+            "from_terminal": "A1",
+            "to_part": "SIMATIC S7-1500 DQ 16x24V",
+            "to_mark": "N4",
+            "to_terminal": 18
+        },
+        {
+            "from_terminal": 13,
+            "to_part": 1135752,
+            "to_mark": "Q10",
+            "to_terminal": "OUT+ 2.1"
+        },
+        {
+            "from_terminal": "A2-",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 7.4
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "890-703",
+            "to_mark": "X760",
+            "to_terminal": "L"
+        }
+    ],
+    "N5": [
+        {
+            "from_terminal": 1,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 2,
+            "to_part": "Emergency button",
+            "to_mark": NaN,
+            "to_terminal": 22
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "3RV2021-1GA15",
+            "to_mark": "Q6",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": 4,
+            "to_part": "3RV2021-4EA10",
+            "to_mark": "Q5",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": 5,
+            "to_part": "IFM E12408",
+            "to_mark": "X622",
+            "to_terminal": "white wire"
+        },
+        {
+            "from_terminal": 6,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 7,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 8,
+            "to_part": "12 pin sidepanel connector for ui panel",
+            "to_mark": "X600",
+            "to_terminal": "pin 9"
+        },
+        {
+            "from_terminal": 9,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 10,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 11,
+            "to_part": "S0 servo motor protector",
+            "to_mark": "Q9",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": 12,
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "3RT2025-1BB40",
+            "to_mark": "K5",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": 14,
+            "to_part": "IFM E12408",
+            "to_mark": "X622",
+            "to_terminal": "black wire"
+        },
+        {
+            "from_terminal": 15,
+            "to_part": "Aux switch main",
+            "to_mark": "Q2.1",
+            "to_terminal": 12
+        },
+        {
+            "from_terminal": 16,
+            "to_part": "SITOP PSE200U",
+            "to_mark": "G2",
+            "to_terminal": "S"
+        },
+        {
+            "from_terminal": 17,
+            "to_part": "2002-1401",
+            "to_mark": "X35",
+            "to_terminal": "1.4"
+        },
+        {
+            "from_terminal": 18,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 19,
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 20,
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": "3.3"
+        }
+    ],
+    "X622": [
+        {
+            "from_terminal": "white wire",
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 5
+        },
+        {
+            "from_terminal": "black wire",
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": "pin 1",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 5.3
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "pin 5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "Q2.1": [
+        {
+            "from_terminal": 12,
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 15
+        },
+        {
+            "from_terminal": 13,
+            "to_part": "Emergency button",
+            "to_mark": "X610",
+            "to_terminal": 12
+        }
+    ],
+    "X35": [
+        {
+            "from_terminal": "1.4",
+            "to_part": "SIMATIC S7-1500 DI 16x24V",
+            "to_mark": "N5",
+            "to_terminal": 17
+        },
+        {
+            "from_terminal": "1.1",
+            "to_part": "Top cooling fan (side panel)",
+            "to_mark": "C1",
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "1.2",
+            "to_part": "Bottom cooling fan (door)",
+            "to_mark": "C2",
+            "to_terminal": NaN
+        }
+    ],
+    "X601": [
+        {
+            "from_terminal": "pin 1",
+            "to_part": "Omron 111-3042",
+            "to_mark": "K8",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2010-1307",
+            "to_mark": "X2",
+            "to_terminal": "PE"
+        }
+    ],
+    "X602": [
+        {
+            "from_terminal": "pin 1",
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "T1"
+        },
+        {
+            "from_terminal": "pin 2",
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "T2"
+        },
+        {
+            "from_terminal": "pin 3",
+            "to_part": "3RT2016-1BB41",
+            "to_mark": "K6",
+            "to_terminal": "T3"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2010-1201",
+            "to_mark": "X2",
+            "to_terminal": "PE"
+        }
+    ],
+    "X610": [
+        {
+            "from_terminal": 11,
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 3.1
+        },
+        {
+            "from_terminal": 12,
+            "to_part": "Aux early break on main power switch",
+            "to_mark": "Q2.1",
+            "to_terminal": 13
+        },
+        {
+            "from_terminal": 21,
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 3.4
+        }
+    ],
+    "X710": [
+        {
+            "from_terminal": "A1",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K1",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A2",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A3",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K1",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A4",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A5",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K2",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A6",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A7",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K2",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "A8",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "A9",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K3",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B2",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B3",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K3",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B4",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "B5",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K4",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B6",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "B7",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K4",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "B8",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "C1",
+            "to_part": "3RF2330-1AA02",
+            "to_mark": "K9",
+            "to_terminal": "2T"
+        },
+        {
+            "from_terminal": "C2",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "C3",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 7.2
+        },
+        {
+            "from_terminal": "C4",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 3.2
+        },
+        {
+            "from_terminal": "C5",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 7.4
+        },
+        {
+            "from_terminal": "C6",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 3.4
+        },
+        {
+            "from_terminal": "C7",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "C8",
+            "to_part": "Omron 111-3042",
+            "to_mark": "K7",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": "C9",
+            "to_part": "2010-1201",
+            "to_mark": "X21",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2010-1207",
+            "to_mark": "X6",
+            "to_terminal": 5.1
+        },
+        {
+            "from_terminal": "A1 - C9 + PE",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
+    "C1": [
+        {
+            "from_terminal": NaN,
+            "to_part": "2002-1401",
+            "to_mark": "X35",
+            "to_terminal": "1.1"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 6.3
+        }
+    ],
+    "C2": [
+        {
+            "from_terminal": NaN,
+            "to_part": "2002-1401",
+            "to_mark": "X35",
+            "to_terminal": "1.2"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 5.4
+        }
+    ],
+    "X700": [
+        {
+            "from_terminal": NaN,
+            "to_part": "2010-1201",
+            "to_mark": "X6",
+            "to_terminal": 1.2
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "2010-1201",
+            "to_mark": "X6",
+            "to_terminal": 2.2
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "2010-1201",
+            "to_mark": "X6",
+            "to_terminal": 3.2
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "2010-1203",
+            "to_mark": "X6",
+            "to_terminal": 4.2
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "2010-1307",
+            "to_mark": "X6",
+            "to_terminal": 5.2
+        }
+    ],
+    "Q1 ": [
+        {
+            "from_terminal": "X1 (profinet)",
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "N1",
+            "to_terminal": "P2"
+        },
+        {
+            "from_terminal": "X2 (profinet)",
+            "to_part": "Side panel connector",
+            "to_mark": "X631",
+            "to_terminal": NaN
+        }
+    ],
+    "X631": [
+        {
+            "from_terminal": NaN,
+            "to_part": 111600,
+            "to_mark": "Q1 ",
+            "to_terminal": "X2 (profinet)"
+        }
+    ],
+    "X741": [
+        {
+            "from_terminal": NaN,
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "X6 (profinet)"
+        }
+    ],
+    "X742": [
+        {
+            "from_terminal": NaN,
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "X7 (profinet)"
+        }
+    ],
+    "X720": [
+        {
+            "from_terminal": NaN,
+            "to_part": 111600,
+            "to_mark": "Q1",
+            "to_terminal": "X8 (profinet)"
+        }
+    ],
+    "Q10": [
+        {
+            "from_terminal": "IN+ 1.1",
+            "to_part": "2002-1401",
+            "to_mark": "X3",
+            "to_terminal": 8.1
+        },
+        {
+            "from_terminal": "IN- 3.1",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 7.2
+        },
+        {
+            "from_terminal": "OUT+ 2.1",
+            "to_part": 2900376,
+            "to_mark": "K10",
+            "to_terminal": 13
+        }
+    ],
+    "X760": [
+        {
+            "from_terminal": "L",
+            "to_part": 2900376,
+            "to_mark": "K10",
+            "to_terminal": 14
+        },
+        {
+            "from_terminal": "N",
+            "to_part": "2002-1401",
+            "to_mark": "X4",
+            "to_terminal": 7.5
+        },
+        {
+            "from_terminal": "PE",
+            "to_part": "2010-1307",
+            "to_mark": "X2",
+            "to_terminal": "PE"
+        }
+    ]
+}

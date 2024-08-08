@@ -1,4 +1,3 @@
-from tkinter import VERTICAL
 from textual.app import App, ComposeResult
 from textual.containers import Container, Horizontal, Vertical, Grid
 from textual.widgets import Input, Button, Footer, Header, Static, Label, Checkbox, Switch, ListItem, ListView, RichLog
@@ -34,8 +33,8 @@ atexit.register(logger.removeHandler, rich_log_handler)
 
 # DIT MOET IN EEN ANDERE SCRIPT LATER
 class TestScreen(Screen):
-    totest = ""
     CSS_PATH = "tester.tcss"
+    totest = ""
 
     def __init__(self, totest: str) -> None:
             super().__init__()
