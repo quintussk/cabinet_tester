@@ -3,6 +3,10 @@ import os
 from pathlib import Path
 import pandas as pd
 from rich import print
+import logging
+
+logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
 
 class CreateProject:
     important_marks = ["10CON1", "21C1", "21C2", "19C1", "17C1", "16C1", "8C1", "20C1", "20C2"]
@@ -13,9 +17,10 @@ class CreateProject:
     def create(self, path_file: Path):
         path_file = Path(__file__).parent.parent / f"electrical_schemes/{path_file}"
         if not path_file.exists():
-            print(f"File not found: {path_file}")
+            logger.error(f"File not found: {path_file}")
             return
-
+        
+        logger.debug("File found")
         try:
             # Controleer alle werkbladnamen
             excel_file = pd.ExcelFile(path_file)
@@ -27,7 +32,7 @@ class CreateProject:
             elif 'Cable list ' in excel_file.sheet_names:
                 sheet_name = 'Cable list '
             else:
-                print("No valid sheet name found")
+                logger.debug("No valid sheet name found")
                 return None
 
             # Lees het juiste werkblad en gebruik de eerste rij als kolomnamen

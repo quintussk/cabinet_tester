@@ -20,15 +20,15 @@
         },
         {
             "from_terminal": 4.1,
-            "to_part": "16A Circuit breaker",
+            "to_part": "32A Circuit breaker",
             "to_mark": "4CB1",
             "to_terminal": 7
         },
         {
             "from_terminal": 5.1,
-            "to_part": "Ground",
-            "to_mark": "GND",
-            "to_terminal": NaN
+            "to_part": "2002-1407",
+            "to_mark": "X31",
+            "to_terminal": "GND"
         },
         {
             "from_terminal": 1,
@@ -64,37 +64,37 @@
     "4Q1": [
         {
             "from_terminal": "L1",
-            "to_part": "2002-1401",
+            "to_part": "2004-1401",
             "to_mark": "X30",
             "to_terminal": 1.1
         },
         {
             "from_terminal": "L2",
-            "to_part": "2002-1401",
+            "to_part": "2004-1401",
             "to_mark": "X30",
             "to_terminal": 2.1
         },
         {
             "from_terminal": "L3",
-            "to_part": "2002-1401",
+            "to_part": "2004-1401",
             "to_mark": "X30",
             "to_terminal": 3.1
         },
         {
             "from_terminal": "T1",
-            "to_part": "16A Circuit breaker",
+            "to_part": "32A Circuit breaker",
             "to_mark": "4CB1",
             "to_terminal": 1
         },
         {
             "from_terminal": "T2",
-            "to_part": "16A Circuit breaker",
+            "to_part": "32A Circuit breaker",
             "to_mark": "4CB1",
             "to_terminal": 3
         },
         {
             "from_terminal": "T3",
-            "to_part": "16A Circuit breaker",
+            "to_part": "32A Circuit breaker",
             "to_mark": "4CB1",
             "to_terminal": 5
         }
@@ -102,7 +102,7 @@
     "4CB1": [
         {
             "from_terminal": 7,
-            "to_part": "2002-1403",
+            "to_part": "2004-1403",
             "to_mark": "X30",
             "to_terminal": 4.1
         },
@@ -126,85 +126,59 @@
         },
         {
             "from_terminal": 2,
-            "to_part": "2002-1401",
-            "to_mark": "X31",
+            "to_part": "2004-1401",
+            "to_mark": "X35",
             "to_terminal": 1.1
         },
         {
             "from_terminal": 4,
-            "to_part": "2002-1401",
-            "to_mark": "X31",
-            "to_terminal": 3.1
+            "to_part": "2004-1401",
+            "to_mark": "X35",
+            "to_terminal": 2.1
         },
         {
             "from_terminal": 6,
-            "to_part": "2002-1401",
-            "to_mark": "X31",
-            "to_terminal": 5.1
+            "to_part": "2004-1401",
+            "to_mark": "X35",
+            "to_terminal": 3.1
         },
         {
             "from_terminal": 8,
-            "to_part": "2002-1403",
-            "to_mark": "X31",
-            "to_terminal": 7.1
-        }
-    ],
-    "GND": [
-        {
-            "from_terminal": NaN,
-            "to_part": "2002-1407",
-            "to_mark": "X30",
-            "to_terminal": 5.1
-        },
-        {
-            "from_terminal": 1.4,
-            "to_part": "6ES7214-1AG40-0XB0",
-            "to_mark": "6A1",
-            "to_terminal": "PE"
-        },
-        {
-            "from_terminal": 1.2,
-            "to_part": "6ES7231-5QF32-0XB0",
-            "to_mark": "6A2",
-            "to_terminal": "PE"
-        },
-        {
-            "from_terminal": 2.4,
-            "to_part": "6ES7231-1BF32-0XB0",
-            "to_mark": "6A3",
-            "to_terminal": "PE"
-        },
-        {
-            "from_terminal": 2.2,
-            "to_part": "NITE-RF8-1100",
-            "to_mark": "7SW1",
-            "to_terminal": "PE"
+            "to_part": "2004-1403",
+            "to_mark": "X35",
+            "to_terminal": 4.1
         }
     ],
     "X31": [
         {
+            "from_terminal": "GND",
+            "to_part": "2004-1407",
+            "to_mark": "X30",
+            "to_terminal": 5.1
+        },
+        {
             "from_terminal": 1.1,
-            "to_part": "16A Circuit breaker",
-            "to_mark": "4CB1",
-            "to_terminal": 2
+            "to_part": "2004-1401",
+            "to_mark": "X35",
+            "to_terminal": 1.4
         },
         {
             "from_terminal": 3.1,
-            "to_part": "16A Circuit breaker",
-            "to_mark": "4CB1",
-            "to_terminal": 4
+            "to_part": "2004-1401",
+            "to_mark": "X35",
+            "to_terminal": 2.4
         },
         {
             "from_terminal": 5.1,
-            "to_part": "16A Circuit breaker",
-            "to_mark": "4CB1",
-            "to_terminal": 6
+            "to_part": "2004-1401",
+            "to_mark": "X35",
+            "to_terminal": 3.4
         },
         {
             "from_terminal": 7.1,
-            "to_part": "16A Circuit breaker",
-            "to_mark": "4CB1",
-            "to_terminal": 8
+            "to_part": "2004-1403",
+            "to_mark": "X35",
+            "to_terminal": 4.4
         },
         {
             "from_terminal": "L1",
@@ -250,14 +224,8 @@
         },
         {
             "from_terminal": "L1",
-            "to_part": "5SY4102-7",
-            "to_mark": "14MCB1",
-            "to_terminal": 1
-        },
-        {
-            "from_terminal": "L1",
             "to_part": "5SY4106-7",
-            "to_mark": "15MCB1",
+            "to_mark": "14MCB1",
             "to_terminal": 1
         },
         {
@@ -286,7 +254,7 @@
         },
         {
             "from_terminal": "L3",
-            "to_part": "5SY4102-7",
+            "to_part": "5SY4103-7",
             "to_mark": "18MCB1",
             "to_terminal": 1
         },
@@ -297,22 +265,10 @@
             "to_terminal": 2.2
         },
         {
-            "from_terminal": "N",
-            "to_part": "6SL3210-5FB10-8UF0",
-            "to_mark": "15DRV1",
-            "to_terminal": "L3"
-        },
-        {
-            "from_terminal": "GND",
-            "to_part": "6SL3210-5FB10-8UF0",
-            "to_mark": "15DRV1",
-            "to_terminal": "PE"
-        },
-        {
             "from_terminal": "PE",
             "to_part": "ILME CQF05",
             "to_mark": "16C1",
-            "to_terminal": "pin 4"
+            "to_terminal": "PE"
         },
         {
             "from_terminal": "N",
@@ -363,10 +319,102 @@
             "to_terminal": "PE"
         }
     ],
+    "X35": [
+        {
+            "from_terminal": 1.1,
+            "to_part": "32A Circuit breaker",
+            "to_mark": "4CB1",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": 2.1,
+            "to_part": "32A Circuit breaker",
+            "to_mark": "4CB1",
+            "to_terminal": 4
+        },
+        {
+            "from_terminal": 3.1,
+            "to_part": "32A Circuit breaker",
+            "to_mark": "4CB1",
+            "to_terminal": 6
+        },
+        {
+            "from_terminal": 4.1,
+            "to_part": "32A Circuit breaker",
+            "to_mark": "4CB1",
+            "to_terminal": 8
+        },
+        {
+            "from_terminal": 1.4,
+            "to_part": "2002-1401",
+            "to_mark": "X31",
+            "to_terminal": 1.1
+        },
+        {
+            "from_terminal": 2.4,
+            "to_part": "2002-1401",
+            "to_mark": "X31",
+            "to_terminal": 3.1
+        },
+        {
+            "from_terminal": 3.4,
+            "to_part": "2002-1401",
+            "to_mark": "X31",
+            "to_terminal": 5.1
+        },
+        {
+            "from_terminal": 4.4,
+            "to_part": "2002-1403",
+            "to_mark": "X31",
+            "to_terminal": 7.1
+        },
+        {
+            "from_terminal": 1.2,
+            "to_part": "Contactor servo drive",
+            "to_mark": "15MCB1",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": 2.2,
+            "to_part": "Contactor servo drive",
+            "to_mark": "15MCB1",
+            "to_terminal": 3
+        },
+        {
+            "from_terminal": 3.2,
+            "to_part": "Contactor servo drive",
+            "to_mark": "15MCB1",
+            "to_terminal": 5
+        },
+        {
+            "from_terminal": 1.2,
+            "to_part": "5SY4103-7",
+            "to_mark": "18MCB1",
+            "to_terminal": 2
+        },
+        {
+            "from_terminal": 2.2,
+            "to_part": "2004-1403",
+            "to_mark": "X31",
+            "to_terminal": "N"
+        },
+        {
+            "from_terminal": 1.1,
+            "to_part": "Cabinet cooling fan",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": 2.1,
+            "to_part": "Cabinet cooling fan",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        }
+    ],
     "5MCB1": [
         {
             "from_terminal": 1,
-            "to_part": "2002-1401",
+            "to_part": "2004-1401",
             "to_mark": "X31",
             "to_terminal": "L1"
         },
@@ -386,13 +434,13 @@
         },
         {
             "from_terminal": "N",
-            "to_part": "2002-1403",
+            "to_part": "2004-1403",
             "to_mark": "X31",
             "to_terminal": "N"
         },
         {
             "from_terminal": "PE",
-            "to_part": "2002-1407",
+            "to_part": "2004-1407",
             "to_mark": "X31",
             "to_terminal": "PE"
         },
@@ -486,13 +534,13 @@
         },
         {
             "from_terminal": 2.4,
-            "to_part": "6ES7231-5QF32-0XB0",
+            "to_part": "6ES7231-5QD32-0XB0",
             "to_mark": "6A2",
             "to_terminal": "M"
         },
         {
             "from_terminal": 2.3,
-            "to_part": "6ES7231-1BF32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "M"
         },
@@ -521,7 +569,7 @@
             "to_terminal": "M"
         },
         {
-            "from_terminal": 3.1,
+            "from_terminal": "3.1",
             "to_part": "ILME CQF12",
             "to_mark": "19C1",
             "to_terminal": "pin 2"
@@ -564,7 +612,7 @@
         },
         {
             "from_terminal": 5.3,
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": "A2"
         },
@@ -718,7 +766,7 @@
         },
         {
             "from_terminal": "A1",
-            "to_part": "6ES7231-5QD32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "DQ a.6"
         },
@@ -800,7 +848,7 @@
         },
         {
             "from_terminal": "A1",
-            "to_part": "6ES7231-5QD32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "DQ a.7"
         },
@@ -919,14 +967,76 @@
         {
             "from_terminal": 1,
             "to_part": "2002-1401",
-            "to_mark": "X31",
+            "to_mark": "X35",
+            "to_terminal": 1.2
+        },
+        {
+            "from_terminal": 3,
+            "to_part": "2002-1401",
+            "to_mark": "X35",
+            "to_terminal": 2.2
+        },
+        {
+            "from_terminal": 5,
+            "to_part": "2002-1401",
+            "to_mark": "X35",
+            "to_terminal": 3.2
+        },
+        {
+            "from_terminal": 1,
+            "to_part": "EMC filter",
+            "to_mark": "15EMC1",
             "to_terminal": "L1"
         },
         {
-            "from_terminal": 2,
+            "from_terminal": 3,
+            "to_part": "EMC filter",
+            "to_mark": "15EMC1",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": 5,
+            "to_part": "EMC filter",
+            "to_mark": "15EMC1",
+            "to_terminal": "L3"
+        }
+    ],
+    "15EMC1": [
+        {
+            "from_terminal": "L1",
+            "to_part": "Contactor servo drive",
+            "to_mark": "15MCB1",
+            "to_terminal": 1
+        },
+        {
+            "from_terminal": "L2",
+            "to_part": "Contactor servo drive",
+            "to_mark": "15MCB1",
+            "to_terminal": 3
+        },
+        {
+            "from_terminal": "L3",
+            "to_part": "Contactor servo drive",
+            "to_mark": "15MCB1",
+            "to_terminal": 5
+        },
+        {
+            "from_terminal": "L1.1",
             "to_part": "6SL3210-5FB10-8UF0",
             "to_mark": "15DRV1",
             "to_terminal": "L1"
+        },
+        {
+            "from_terminal": "L2.1",
+            "to_part": "6SL3210-5FB10-8UF0",
+            "to_mark": "15DRV1",
+            "to_terminal": "L2"
+        },
+        {
+            "from_terminal": "L3.1",
+            "to_part": "6SL3210-5FB10-8UF0",
+            "to_mark": "15DRV1",
+            "to_terminal": "L3"
         }
     ],
     "16CB1": [
@@ -1006,7 +1116,7 @@
         },
         {
             "from_terminal": "A1",
-            "to_part": "6ES7231-5QD32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "DQ a.1"
         },
@@ -1020,7 +1130,7 @@
     "14K1": [
         {
             "from_terminal": 11,
-            "to_part": "5SY4102-7",
+            "to_part": "5SY4106-7",
             "to_mark": "14MCB1",
             "to_terminal": 2
         },
@@ -1032,7 +1142,7 @@
         },
         {
             "from_terminal": "A1",
-            "to_part": "6ES7231-5QD32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "DQ a.0"
         },
@@ -1046,7 +1156,7 @@
     "17MCB1": [
         {
             "from_terminal": 1,
-            "to_part": "2002-1401",
+            "to_part": "2004-1401",
             "to_mark": "X31",
             "to_terminal": "L3"
         },
@@ -1060,12 +1170,12 @@
     "18MCB1": [
         {
             "from_terminal": 1,
-            "to_part": "2002-1401",
+            "to_part": "2004-1401",
             "to_mark": "X31",
             "to_terminal": "L3"
         },
         {
-            "from_terminal": 1,
+            "from_terminal": 2,
             "to_part": "2002-1201",
             "to_mark": "X35",
             "to_terminal": 1.2
@@ -1086,7 +1196,7 @@
         },
         {
             "from_terminal": "A1",
-            "to_part": "6ES7231-5QD32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "DQ a.2"
         },
@@ -1095,32 +1205,6 @@
             "to_part": "2002-1401",
             "to_mark": "X34",
             "to_terminal": 7.1
-        }
-    ],
-    "X35": [
-        {
-            "from_terminal": 1.2,
-            "to_part": "5SY4102-7",
-            "to_mark": "18MCB1",
-            "to_terminal": 1
-        },
-        {
-            "from_terminal": 2.2,
-            "to_part": "2002-1403",
-            "to_mark": "X31",
-            "to_terminal": "N"
-        },
-        {
-            "from_terminal": 1.1,
-            "to_part": "Cabinet cooling fan",
-            "to_mark": NaN,
-            "to_terminal": NaN
-        },
-        {
-            "from_terminal": 2.1,
-            "to_part": "Cabinet cooling fan",
-            "to_mark": NaN,
-            "to_terminal": NaN
         }
     ],
     "NaN": [
@@ -1144,9 +1228,15 @@
         },
         {
             "from_terminal": NaN,
-            "to_part": "6SL3210-5FB10-8UF0",
-            "to_mark": "15DRV1",
-            "to_terminal": "L2"
+            "to_part": "ILME CQF05",
+            "to_mark": "16C1",
+            "to_terminal": "pin 4"
+        },
+        {
+            "from_terminal": NaN,
+            "to_part": "ILME CQF05",
+            "to_mark": "16C1",
+            "to_terminal": "pin 5"
         },
         {
             "from_terminal": NaN,
@@ -1391,26 +1481,26 @@
             "to_terminal": 4
         },
         {
-            "from_terminal": 1.2,
+            "from_terminal": 1.3,
             "to_part": "6ES7214-1AG40-0XB0",
             "to_mark": "6A1",
             "to_terminal": "L+"
         },
         {
-            "from_terminal": 1.3,
+            "from_terminal": 1.4,
             "to_part": "6ES7214-1AG40-0XB0",
             "to_mark": "6A1",
             "to_terminal": "3L+"
         },
         {
-            "from_terminal": 1.4,
-            "to_part": "6ES7231-5QF32-0XB0",
+            "from_terminal": 1.2,
+            "to_part": "6ES7231-5QD32-0XB0",
             "to_mark": "6A2",
             "to_terminal": "L+"
         },
         {
             "from_terminal": 2.1,
-            "to_part": "6ES7231-1BF32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "L+"
         },
@@ -1439,13 +1529,13 @@
             "to_terminal": "24V+"
         },
         {
-            "from_terminal": 4.3,
+            "from_terminal": "4.3",
             "to_part": "ILME CQF12",
             "to_mark": "19C1",
             "to_terminal": "pin 5"
         },
         {
-            "from_terminal": 4.4,
+            "from_terminal": "4.4",
             "to_part": "ILME CQF12",
             "to_mark": "19C1",
             "to_terminal": "pin 8"
@@ -1473,12 +1563,6 @@
             "to_part": "ILME CDDF 38",
             "to_mark": "21C2",
             "to_terminal": "C5"
-        },
-        {
-            "from_terminal": 1.4,
-            "to_part": "ILME CDDF 38",
-            "to_mark": "21C2",
-            "to_terminal": "D1"
         }
     ],
     "6A1": [
@@ -1486,13 +1570,13 @@
             "from_terminal": "L+",
             "to_part": "2002-1401",
             "to_mark": "X33",
-            "to_terminal": 1.2
+            "to_terminal": 1.3
         },
         {
             "from_terminal": "3L+",
             "to_part": "2002-1401",
             "to_mark": "X33",
-            "to_terminal": 1.3
+            "to_terminal": 1.4
         },
         {
             "from_terminal": "M",
@@ -1600,6 +1684,12 @@
             "from_terminal": "DI b.2",
             "to_part": "ILME CDDF 38",
             "to_mark": "21C2",
+            "to_terminal": "D1"
+        },
+        {
+            "from_terminal": "DI b.2",
+            "to_part": "ILME CDDF 38",
+            "to_mark": "21C2",
             "to_terminal": "D2"
         },
         {
@@ -1633,12 +1723,38 @@
             "to_terminal": "Port 1"
         }
     ],
+    "GND": [
+        {
+            "from_terminal": 1.4,
+            "to_part": "6ES7214-1AG40-0XB0",
+            "to_mark": "6A1",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": 1.2,
+            "to_part": "6ES7231-5QD32-0XB0",
+            "to_mark": "6A2",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": 2.4,
+            "to_part": "6ES7222-1BF32-0XB0",
+            "to_mark": "6A3",
+            "to_terminal": "PE"
+        },
+        {
+            "from_terminal": 2.2,
+            "to_part": "NITE-RF8-1100",
+            "to_mark": "7SW1",
+            "to_terminal": "PE"
+        }
+    ],
     "6A2": [
         {
             "from_terminal": "L+",
             "to_part": "2002-1401",
             "to_mark": "X33",
-            "to_terminal": 1.4
+            "to_terminal": 1.2
         },
         {
             "from_terminal": "M",
@@ -1734,7 +1850,7 @@
         },
         {
             "from_terminal": "DQ a.1",
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": "A1"
         },
@@ -1892,57 +2008,63 @@
         },
         {
             "from_terminal": "L1",
-            "to_part": "5SY4106-7",
-            "to_mark": "15MCB1",
-            "to_terminal": 2
+            "to_part": "EMC filter",
+            "to_mark": "15EMC1",
+            "to_terminal": "L1.1"
         },
         {
             "from_terminal": "L2",
-            "to_part": "free",
-            "to_mark": NaN,
-            "to_terminal": NaN
+            "to_part": "EMC filter",
+            "to_mark": "15EMC1",
+            "to_terminal": "L2.1"
         },
         {
             "from_terminal": "L3",
-            "to_part": "2002-1403",
-            "to_mark": "X31",
-            "to_terminal": "N"
+            "to_part": "EMC filter",
+            "to_mark": "15EMC1",
+            "to_terminal": "L3.1"
         },
         {
             "from_terminal": "U",
-            "to_part": "ILME CKF03",
+            "to_part": "6FX8002-8QN11-1AB0",
             "to_mark": "21C3",
-            "to_terminal": "pin 1"
+            "to_terminal": "U"
         },
         {
             "from_terminal": "V",
-            "to_part": "ILME CKF03",
+            "to_part": "6FX8002-8QN11-1AB0",
             "to_mark": "21C3",
-            "to_terminal": "pin 2"
+            "to_terminal": "V"
         },
         {
             "from_terminal": "W",
-            "to_part": "ILME CKF03",
+            "to_part": "6FX8002-8QN11-1AB0",
             "to_mark": "21C3",
-            "to_terminal": "pin 3"
+            "to_terminal": "W"
         },
         {
             "from_terminal": "PE",
-            "to_part": "ILME CKF03",
+            "to_part": "6FX8002-8QN11-1AB0",
             "to_mark": "21C3",
             "to_terminal": "PE"
         },
         {
-            "from_terminal": "PE",
-            "to_part": "2002-1407",
-            "to_mark": "X31",
-            "to_terminal": "GND"
+            "from_terminal": "BR-",
+            "to_part": "6FX8002-8QN11-1AB0",
+            "to_mark": "21C3",
+            "to_terminal": "BR-"
         },
         {
-            "from_terminal": "X9",
-            "to_part": "ILME CQF12",
-            "to_mark": "21C4",
-            "to_terminal": NaN
+            "from_terminal": "BR+",
+            "to_part": "6FX8002-8QN11-1AB0",
+            "to_mark": "21C3",
+            "to_terminal": "BR+"
+        },
+        {
+            "from_terminal": "X100",
+            "to_part": "6FX8002-8QN11-1AB0",
+            "to_mark": "21C3",
+            "to_terminal": "X100"
         },
         {
             "from_terminal": "Ethernet",
@@ -1953,19 +2075,19 @@
     ],
     "21C3": [
         {
-            "from_terminal": "pin 1",
+            "from_terminal": "U",
             "to_part": "6SL3210-5FB10-8UF0",
             "to_mark": "15DRV1",
             "to_terminal": "U"
         },
         {
-            "from_terminal": "pin 2",
+            "from_terminal": "V",
             "to_part": "6SL3210-5FB10-8UF0",
             "to_mark": "15DRV1",
             "to_terminal": "V"
         },
         {
-            "from_terminal": "pin 3",
+            "from_terminal": "W",
             "to_part": "6SL3210-5FB10-8UF0",
             "to_mark": "15DRV1",
             "to_terminal": "W"
@@ -1975,37 +2097,59 @@
             "to_part": "6SL3210-5FB10-8UF0",
             "to_mark": "15DRV1",
             "to_terminal": "PE"
-        }
-    ],
-    "21C4": [
+        },
         {
-            "from_terminal": NaN,
+            "from_terminal": "BR-",
             "to_part": "6SL3210-5FB10-8UF0",
             "to_mark": "15DRV1",
-            "to_terminal": "X9"
+            "to_terminal": "BR-"
+        },
+        {
+            "from_terminal": "BR+",
+            "to_part": "6SL3210-5FB10-8UF0",
+            "to_mark": "15DRV1",
+            "to_terminal": "BR+"
+        },
+        {
+            "from_terminal": "X100",
+            "to_part": "6SL3210-5FB10-8UF0",
+            "to_mark": "15DRV1",
+            "to_terminal": "X100"
         }
     ],
     "16C1": [
         {
             "from_terminal": "pin 1",
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": 2
         },
         {
             "from_terminal": "pin 2",
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": 4
         },
         {
             "from_terminal": "pin 3",
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": 6
         },
         {
             "from_terminal": "pin 4",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "pin 5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "PE",
             "to_part": "2002-1407",
             "to_mark": "X31",
             "to_terminal": "PE"
@@ -2042,7 +2186,7 @@
             "from_terminal": "pin 2",
             "to_part": "2002-1401",
             "to_mark": "X34",
-            "to_terminal": 3.1
+            "to_terminal": "3.1"
         },
         {
             "from_terminal": "pin 3",
@@ -2060,7 +2204,7 @@
             "from_terminal": "pin 5",
             "to_part": "2002-1401",
             "to_mark": "X33",
-            "to_terminal": 4.3
+            "to_terminal": "4.3"
         },
         {
             "from_terminal": "pin 6",
@@ -2078,7 +2222,7 @@
             "from_terminal": "pin 8",
             "to_part": "2002-1401",
             "to_mark": "X33",
-            "to_terminal": 4.4
+            "to_terminal": "4.4"
         },
         {
             "from_terminal": "pin 9",
@@ -2158,7 +2302,7 @@
         },
         {
             "from_terminal": 3,
-            "to_part": "6ES7231-5QD32-0XB0",
+            "to_part": "6ES7222-1BF32-0XB0",
             "to_mark": "6A3",
             "to_terminal": "DQ a.3"
         },
@@ -2478,25 +2622,25 @@
         },
         {
             "from_terminal": "B1",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (M+)"
         },
         {
             "from_terminal": "B2",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (M-)"
         },
         {
             "from_terminal": "B3",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (T+)"
         },
         {
             "from_terminal": "B4",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (T-)"
         },
@@ -2532,7 +2676,7 @@
         },
         {
             "from_terminal": "C1",
-            "to_part": "6ES7214-1AG40-0XB0",
+            "to_part": "SIMATIC S7-1200 - TC",
             "to_mark": "6A1",
             "to_terminal": "DI a.2"
         },
@@ -2593,8 +2737,8 @@
         {
             "from_terminal": "D1",
             "to_part": "6ES7214-1AG40-0XB0",
-            "to_mark": "X33",
-            "to_terminal": 1.4
+            "to_mark": "6A1",
+            "to_terminal": "DI b.2"
         },
         {
             "from_terminal": "D2",
@@ -2856,13 +3000,13 @@
         },
         {
             "from_terminal": 4,
-            "to_part": "2004-1401",
+            "to_part": "2004-1403",
             "to_mark": "X30",
             "to_terminal": 4
         },
         {
             "from_terminal": 5,
-            "to_part": "2004-1401",
+            "to_part": "2004-1407",
             "to_mark": "X30",
             "to_terminal": 5
         }

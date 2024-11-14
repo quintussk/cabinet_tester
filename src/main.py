@@ -40,7 +40,6 @@ atexit.register(logger.removeHandler, rich_log_handler)
 testers = [
     ("S25", "Cable & cabinet assembly list S25.xlsx"),
     ("E25", "Cable & cabinet assembly list E25.xlsx"),
-    # ("E25_Belotti", "infoS25"),
     ("F25", "Cable & cabinet assembly list F25.xlsx"),
     ("E40", "Cable & cabinet assembly list E40 S7-1500 PLC.xlsx"),
     ("G40", "Cable & extruder assembly list G40.xlsx"),
@@ -107,7 +106,6 @@ class CableApp(App[None]):
             button_test.disabled = True
             button_test.variant = "default"
 
-    
     @on(Button.Pressed, "#Change_Scheme")
     async def changescheme(self, event: Button.Pressed) -> None:
         self.selected_scheme = self.selected_label

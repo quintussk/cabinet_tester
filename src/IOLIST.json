@@ -1,0 +1,517 @@
+{
+    "10CON1": [
+        {
+            "Conector_pin": 1,
+            "mcp_adress": "27",
+            "mcp_pin": "0"
+        },
+        {
+            "Conector_pin": 2,
+            "mcp_adress": "27",
+            "mcp_pin": "1"
+        },
+        {
+            "Conector_pin": 3,
+            "mcp_adress": "27",
+            "mcp_pin": "2"
+        },
+        {
+            "Conector_pin": 4,
+            "mcp_adress": "27",
+            "mcp_pin": "3"
+        },
+        {
+            "Conector_pin": 5,
+            "mcp_adress": "27",
+            "mcp_pin": "4"
+        },
+        {
+            "Conector_pin": 6,
+            "mcp_adress": "27",
+            "mcp_pin": "5"
+        },
+        {
+            "Conector_pin": 7,
+            "mcp_adress": "27",
+            "mcp_pin": "6"
+        },
+        {
+            "Conector_pin": 8,
+            "mcp_adress": "27",
+            "mcp_pin": "7"
+        },
+        {
+            "Conector_pin": 9,
+            "mcp_adress": "27",
+            "mcp_pin": "8"
+        },
+        {
+            "Conector_pin": 10,
+            "mcp_adress": "27",
+            "mcp_pin": "9"
+        },
+        {
+            "Conector_pin": 11,
+            "mcp_adress": "27",
+            "mcp_pin": "10"
+        },
+        {
+            "Conector_pin": 12,
+            "mcp_adress": "27",
+            "mcp_pin": "11"
+        },
+        {
+            "Conector_pin": 13,
+            "mcp_adress": "27",
+            "mcp_pin": "12"
+        },
+        {
+            "Conector_pin": 14,
+            "mcp_adress": "27",
+            "mcp_pin": "13"
+        },
+        {
+            "Conector_pin": 15,
+            "mcp_adress": "27",
+            "mcp_pin": "14"
+        },
+        {
+            "Conector_pin": 16,
+            "mcp_adress": "27",
+            "mcp_pin": "15"
+        }
+    ],
+    "17C1": [
+        {
+            "Conector_pin": 1,
+            "mcp_adress": "26",
+            "mcp_pin": 13
+        },
+        {
+            "Conector_pin": 2,
+            "mcp_adress": "26",
+            "mcp_pin": 14
+        },
+        {
+            "Conector_pin": 3,
+            "mcp_adress": "26",
+            "mcp_pin": 15
+        }
+    ],
+    "19C1": [
+        {
+            "Conector_pin": 1,
+            "mcp_adress": "26",
+            "mcp_pin": 1
+        },
+        {
+            "Conector_pin": 2,
+            "mcp_adress": "26",
+            "mcp_pin": 2
+        },
+        {
+            "Conector_pin": 3,
+            "mcp_adress": "26",
+            "mcp_pin": 3
+        },
+        {
+            "Conector_pin": 4,
+            "mcp_adress": "26",
+            "mcp_pin": 4
+        },
+        {
+            "Conector_pin": 5,
+            "mcp_adress": "26",
+            "mcp_pin": 5
+        },
+        {
+            "Conector_pin": 6,
+            "mcp_adress": "26",
+            "mcp_pin": 6
+        },
+        {
+            "Conector_pin": 7,
+            "mcp_adress": "26",
+            "mcp_pin": 7
+        },
+        {
+            "Conector_pin": 8,
+            "mcp_adress": "26",
+            "mcp_pin": 8
+        },
+        {
+            "Conector_pin": 9,
+            "mcp_adress": "26",
+            "mcp_pin": 9
+        },
+        {
+            "Conector_pin": 10,
+            "mcp_adress": "26",
+            "mcp_pin": 10
+        },
+        {
+            "Conector_pin": 11,
+            "mcp_adress": "26",
+            "mcp_pin": 11
+        },
+        {
+            "Conector_pin": 12,
+            "mcp_adress": "26",
+            "mcp_pin": 12
+        }
+    ],
+    "16C1": [
+        {
+            "Conector_pin": 1,
+            "mcp_adress": "23",
+            "mcp_pin": 8
+        },
+        {
+            "Conector_pin": 2,
+            "mcp_adress": "23",
+            "mcp_pin": 9
+        },
+        {
+            "Conector_pin": 3,
+            "mcp_adress": "23",
+            "mcp_pin": 10
+        },
+        {
+            "Conector_pin": "PE",
+            "mcp_adress": "23",
+            "mcp_pin": 11
+        }
+    ],
+    "20C1": [
+        {
+            "Conector_pin": 2,
+            "mcp_adress": "23",
+            "mcp_pin": 5
+        },
+        {
+            "Conector_pin": 3,
+            "mcp_adress": "23",
+            "mcp_pin": 6
+        },
+        {
+            "Conector_pin": 4,
+            "mcp_adress": "23",
+            "mcp_pin": 7
+        }
+    ],
+    "20C2": [
+        {
+            "Conector_pin": 3,
+            "mcp_adress": "23",
+            "mcp_pin": 3
+        },
+        {
+            "Conector_pin": 4,
+            "mcp_adress": "23",
+            "mcp_pin": 4
+        }
+    ],
+    "21C1": [
+        {
+            "Conector_pin": "A1",
+            "mcp_adress": "24",
+            "mcp_pin": 0
+        },
+        {
+            "Conector_pin": "A2",
+            "mcp_adress": "24",
+            "mcp_pin": 1
+        },
+        {
+            "Conector_pin": "A3",
+            "mcp_adress": "24",
+            "mcp_pin": 2
+        },
+        {
+            "Conector_pin": "A4",
+            "mcp_adress": "24",
+            "mcp_pin": 3
+        },
+        {
+            "Conector_pin": "A5",
+            "mcp_adress": "24",
+            "mcp_pin": 4
+        },
+        {
+            "Conector_pin": "A6",
+            "mcp_adress": "24",
+            "mcp_pin": 5
+        },
+        {
+            "Conector_pin": "A7",
+            "mcp_adress": "24",
+            "mcp_pin": 6
+        },
+        {
+            "Conector_pin": "A8",
+            "mcp_adress": "24",
+            "mcp_pin": 7
+        },
+        {
+            "Conector_pin": "A9",
+            "mcp_adress": "24",
+            "mcp_pin": 8
+        },
+        {
+            "Conector_pin": "B2",
+            "mcp_adress": "24",
+            "mcp_pin": 9
+        },
+        {
+            "Conector_pin": "B3",
+            "mcp_adress": "24",
+            "mcp_pin": 10
+        },
+        {
+            "Conector_pin": "B4",
+            "mcp_adress": "24",
+            "mcp_pin": 11
+        },
+        {
+            "Conector_pin": "B5",
+            "mcp_adress": "24",
+            "mcp_pin": 12
+        },
+        {
+            "Conector_pin": "B6",
+            "mcp_adress": "24",
+            "mcp_pin": 13
+        },
+        {
+            "Conector_pin": "B7",
+            "mcp_adress": "21",
+            "mcp_pin": 0
+        },
+        {
+            "Conector_pin": "B8",
+            "mcp_adress": "21",
+            "mcp_pin": 1
+        },
+        {
+            "Conector_pin": "C1",
+            "mcp_adress": "21",
+            "mcp_pin": 2
+        },
+        {
+            "Conector_pin": "C2",
+            "mcp_adress": "21",
+            "mcp_pin": 3
+        },
+        {
+            "Conector_pin": "C3",
+            "mcp_adress": "21",
+            "mcp_pin": 4
+        },
+        {
+            "Conector_pin": "C4",
+            "mcp_adress": "21",
+            "mcp_pin": 5
+        },
+        {
+            "Conector_pin": "C5",
+            "mcp_adress": "21",
+            "mcp_pin": 6
+        },
+        {
+            "Conector_pin": "C6",
+            "mcp_adress": "21",
+            "mcp_pin": 7
+        },
+        {
+            "Conector_pin": "C7",
+            "mcp_adress": "21",
+            "mcp_pin": 8
+        },
+        {
+            "Conector_pin": "C8",
+            "mcp_adress": "21",
+            "mcp_pin": 9
+        },
+        {
+            "Conector_pin": "C9",
+            "mcp_adress": "21",
+            "mcp_pin": 10
+        }
+    ],
+    "21C2": [
+        {
+            "Conector_pin": "A1",
+            "mcp_adress": "25",
+            "mcp_pin": 0
+        },
+        {
+            "Conector_pin": "A2",
+            "mcp_adress": "25",
+            "mcp_pin": 1
+        },
+        {
+            "Conector_pin": "A3",
+            "mcp_adress": "25",
+            "mcp_pin": 2
+        },
+        {
+            "Conector_pin": "A4",
+            "mcp_adress": "25",
+            "mcp_pin": 3
+        },
+        {
+            "Conector_pin": "A5",
+            "mcp_adress": "25",
+            "mcp_pin": 4
+        },
+        {
+            "Conector_pin": "A6",
+            "mcp_adress": "25",
+            "mcp_pin": 5
+        },
+        {
+            "Conector_pin": "A7",
+            "mcp_adress": "25",
+            "mcp_pin": 6
+        },
+        {
+            "Conector_pin": "A8",
+            "mcp_adress": "25",
+            "mcp_pin": 7
+        },
+        {
+            "Conector_pin": "A9",
+            "mcp_adress": "25",
+            "mcp_pin": 8
+        },
+        {
+            "Conector_pin": "A10",
+            "mcp_adress": "25",
+            "mcp_pin": 9
+        },
+        {
+            "Conector_pin": "B1",
+            "mcp_adress": "25",
+            "mcp_pin": 10
+        },
+        {
+            "Conector_pin": "B2",
+            "mcp_adress": "25",
+            "mcp_pin": 11
+        },
+        {
+            "Conector_pin": "B3",
+            "mcp_adress": "25",
+            "mcp_pin": 12
+        },
+        {
+            "Conector_pin": "B4",
+            "mcp_adress": "25",
+            "mcp_pin": 13
+        },
+        {
+            "Conector_pin": "B5",
+            "mcp_adress": "25",
+            "mcp_pin": 14
+        },
+        {
+            "Conector_pin": "B6",
+            "mcp_adress": "25",
+            "mcp_pin": 15
+        },
+        {
+            "Conector_pin": "B7",
+            "mcp_adress": "22",
+            "mcp_pin": 0
+        },
+        {
+            "Conector_pin": "B8",
+            "mcp_adress": "22",
+            "mcp_pin": 1
+        },
+        {
+            "Conector_pin": "C1",
+            "mcp_adress": "22",
+            "mcp_pin": 2
+        },
+        {
+            "Conector_pin": "C2",
+            "mcp_adress": "22",
+            "mcp_pin": 3
+        },
+        {
+            "Conector_pin": "C3",
+            "mcp_adress": "22",
+            "mcp_pin": 4
+        },
+        {
+            "Conector_pin": "C4",
+            "mcp_adress": "22",
+            "mcp_pin": 5
+        },
+        {
+            "Conector_pin": "C5",
+            "mcp_adress": "22",
+            "mcp_pin": 6
+        },
+        {
+            "Conector_pin": "C6",
+            "mcp_adress": "22",
+            "mcp_pin": 7
+        },
+        {
+            "Conector_pin": "C7",
+            "mcp_adress": "22",
+            "mcp_pin": 8
+        },
+        {
+            "Conector_pin": "C8",
+            "mcp_adress": "22",
+            "mcp_pin": 9
+        },
+        {
+            "Conector_pin": "D1",
+            "mcp_adress": "22",
+            "mcp_pin": 10
+        },
+        {
+            "Conector_pin": "D2",
+            "mcp_adress": "22",
+            "mcp_pin": 11
+        },
+        {
+            "Conector_pin": "D3",
+            "mcp_adress": "22",
+            "mcp_pin": 12
+        },
+        {
+            "Conector_pin": "D4",
+            "mcp_adress": "22",
+            "mcp_pin": 13
+        }
+    ],
+    "8C1": [
+        {
+            "Conector_pin": 1,
+            "mcp_adress": "23",
+            "mcp_pin": 0
+        },
+        {
+            "Conector_pin": 3,
+            "mcp_adress": "23",
+            "mcp_pin": 1
+        },
+        {
+            "Conector_pin": 4,
+            "mcp_adress": "23",
+            "mcp_pin": 2
+        }
+    ],
+    "Tester Probe": [
+        {
+            "Conector_pin": NaN,
+            "mcp_adress": "26",
+            "mcp_pin": 0
+        }
+    ]
+}

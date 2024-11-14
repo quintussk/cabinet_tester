@@ -318,25 +318,25 @@
         },
         {
             "from_terminal": "B1",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (M+)"
         },
         {
             "from_terminal": "B2",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (M-)"
         },
         {
             "from_terminal": "B3",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (T+)"
         },
         {
             "from_terminal": "B4",
-            "to_part": "SIMATIC S7-1200 - TC",
+            "to_part": "SIMATIC S7-1200",
             "to_mark": "6A4",
             "to_terminal": "AI.0 (T-)"
         },
@@ -372,7 +372,7 @@
         },
         {
             "from_terminal": "C1",
-            "to_part": "6ES7214-1AG40-0XB0",
+            "to_part": "SIMATIC S7-1200 - TC",
             "to_mark": "6A1",
             "to_terminal": "DI a.2"
         },
@@ -433,8 +433,8 @@
         {
             "from_terminal": "D1",
             "to_part": "6ES7214-1AG40-0XB0",
-            "to_mark": "X33",
-            "to_terminal": 1.4
+            "to_mark": "6A1",
+            "to_terminal": "DI b.2"
         },
         {
             "from_terminal": "D2",
@@ -502,7 +502,7 @@
             "from_terminal": "pin 2",
             "to_part": "2002-1401",
             "to_mark": "X34",
-            "to_terminal": 3.1
+            "to_terminal": "3.1"
         },
         {
             "from_terminal": "pin 3",
@@ -520,7 +520,7 @@
             "from_terminal": "pin 5",
             "to_part": "2002-1401",
             "to_mark": "X33",
-            "to_terminal": 4.3
+            "to_terminal": "4.3"
         },
         {
             "from_terminal": "pin 6",
@@ -538,7 +538,7 @@
             "from_terminal": "pin 8",
             "to_part": "2002-1401",
             "to_mark": "X33",
-            "to_terminal": 4.4
+            "to_terminal": "4.4"
         },
         {
             "from_terminal": "pin 9",
@@ -588,24 +588,36 @@
     "16C1": [
         {
             "from_terminal": "pin 1",
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": 2
         },
         {
             "from_terminal": "pin 2",
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": 4
         },
         {
             "from_terminal": "pin 3",
-            "to_part": "3RT2015-1BB42",
+            "to_part": "3RT2016-1BB41",
             "to_mark": "16PC1",
             "to_terminal": 6
         },
         {
             "from_terminal": "pin 4",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "pin 5",
+            "to_part": "free",
+            "to_mark": NaN,
+            "to_terminal": NaN
+        },
+        {
+            "from_terminal": "PE",
             "to_part": "2002-1407",
             "to_mark": "X31",
             "to_terminal": "PE"
