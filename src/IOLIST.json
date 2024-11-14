@@ -509,7 +509,7 @@
     ],
     "Tester Probe": [
         {
-            "Conector_pin": NaN,
+            "Conector_pin": "NaN",
             "mcp_adress": "26",
             "mcp_pin": 0
         }
