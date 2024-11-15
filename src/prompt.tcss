@@ -1,0 +1,41 @@
+Prompt {
+    align: center middle;
+}
+
+Prompt > Container {
+    width: 70;
+    height: auto;
+    border: thick $background 100%;
+    background: $surface;
+    padding: 1 1;
+}
+
+Prompt > Container > Label#question{
+    width: 100%;
+    text-style: bold;
+    content-align-horizontal: center;
+    margin-top: 2;
+    color: chartreuse;
+}
+
+Prompt > Container > Label#title {
+    width: 100%;
+    text-style: bold italic;
+    content-align: center top;
+    color: wheat;
+}
+
+Prompt > Container > Static#timer {
+    text-style: italic;
+    content-align-horizontal: center;
+    margin-top: 2;
+    color: red;
+}
+
+Prompt > Container > Static#response {
+    width: 100%;
+    height: 5;
+    content-align-horizontal: center;
+    content-align-vertical: middle;
+    margin-top: 1;
+}

@@ -34,6 +34,18 @@ class BaseTest(BaseModel, arbitrary_types_allowed=True):
         )
         self.results.append(subtest)
 
+    def add_result_different_terminal(self, terminal, passes: bool, gevonden_details):
+        """Voegt een testresultaat toe aan de resultatenlijst."""
+        conector = gevonden_details["Connector"]
+        conector_pin = gevonden_details["Conector_pin"]
+        subtest = SubTest(
+            title=f"Test for terminal {terminal}",
+            terminal=terminal,
+            passes=passes,
+            answer=f"Different kabel connected to this terminal, kabel from connector {conector} with pin {conector_pin} is connected" 
+        )
+        self.results.append(subtest)
+
     def save_results_to_json(self, json_file_path: Path):
         """Slaat de resultaten op in een JSON-bestand en werkt bestaande terminals bij."""
         if not json_file_path.exists():

@@ -58,7 +58,7 @@ class Options(Container):
         yield ListView(
             *[ListItem(Label(f"{tester[0]}  -  {tester[1]}"), id=tester[0]) for tester in testers],
             classes="keuze")
-        with Vertical():
+        with Horizontal(id="horizontal_main"):
             yield Button("Change Scheme", id="Change_Scheme", disabled=True, variant="default")
             self.response_static = Static(f"Selected Scheme: {self.selected_scheme}", id="response")
             yield self.response_static
@@ -82,7 +82,7 @@ class CableApp(App[None]):
                 self.options_container = Options(selected_scheme=self.selected_scheme)
                 yield self.options_container
             with TabPane("Project", id="tab_project"):          
-                yield TestTree()
+                yield TestTree(testers=testers,selected_scheme=self.selected_scheme)
 
         yield rich_log_handler.console
         yield Footer()
@@ -116,7 +116,7 @@ class CableApp(App[None]):
                 CreateProject().create(self.selected_file)
                 self.query(TestTree).remove()
                 self.options_container.update_selected_scheme(self.selected_scheme)
-                self.mount(TestTree())
+                self.mount(TestTree(testers=testers,selected_scheme=self.selected_scheme))
         button_test = self.query_one("#Change_Scheme")
         button_test.disabled = True
         button_test.variant = "default"

@@ -22,16 +22,17 @@ logging.getLogger(__name__)
 logger = logging.getLogger(__name__)
 
 class RunTest(BaseTest):
-    async def run(self, test, test_data_path):
+    async def run(self, test, test_data_path, test_time):
         i2c = busio.I2C(board.SCL, board.SDA)
         mcps = {
-            27: MCP.MCP23017(i2c, address=0x27),
+            
             26: MCP.MCP23017(i2c, address=0x26),
             25: MCP.MCP23017(i2c, address=0x25),
             24: MCP.MCP23017(i2c, address=0x24),
             23: MCP.MCP23017(i2c, address=0x23),
             22: MCP.MCP23017(i2c, address=0x22),
             21: MCP.MCP23017(i2c, address=0x21),
+            27: MCP.MCP23017(i2c, address=0x27),
         }
         
         input_pin = mcps[26].get_pin(0)
@@ -100,7 +101,7 @@ class RunTest(BaseTest):
                         continue
 
                     # Create a prompt instance
-                    prompt_instance = Prompt(f"Test: mark: {to_mark} ({to_part}), terminal: {to_terminal} ", 30)
+                    prompt_instance = Prompt(title=f"Testing; {test} connector" ,prompt=f"Mark: {to_mark} ({to_part}); terminal: {to_terminal} ", duration=test_time)
                     await self.app.push_screen(prompt_instance)
 
                     # Simulate a test with a delay
@@ -121,10 +122,19 @@ class RunTest(BaseTest):
                             self.add_result(from_terminal, True, to_mark, to_terminal)
                             break
                         
-                        if elapsed_time >= 30:
-                            output_pin.value = False
-                            self.add_result(from_terminal, False, to_mark, to_terminal)
-                            break
+                        # if elapsed_time >= 10:
+                        #     output_pin.value = False
+                        #     output_pin.direction = Direction.INPUT
+                        #     mcp_address, pin_number = await self.test_different_components(tested_mark=to_mark, tested_terminal=to_terminal, mcps=mcps, input_pin=input_pin)
+                        #     logger.debug(f"Returned mcp_address: {mcp_address}, pin_number: {pin_number}")
+                        #     if mcp_address is not None:
+                        #         gevonden_details = self.zoek_connector(data_io, mcp_address, pin_number)
+                        #         logger.debug(f"Verbonden component: {gevonden_details}")
+                        #         self.add_result_different_terminal(from_terminal, False, gevonden_details)
+                        #     else:
+                        #         self.add_result(from_terminal, False, to_mark, to_terminal)
+                            
+                        #     break
 
                         await asyncio.sleep(0.5)
 
@@ -138,46 +148,73 @@ class RunTest(BaseTest):
         else:
             logger.debug(f"Test '{test}' not found in the JSON.")
 
+    def zoek_connector(self,data_io, mcp_address, mcp_pin):
+        """
+        Zoek de connector details op basis van MCP-adres en pin-nummer.
+
+        Parameters:
+            data_io (dict): De JSON data met IO informatie.
+            mcp_address (int): Het MCP-adres.
+            mcp_pin (int): Het pin-nummer op de MCP.
+
+        Returns:
+            dict: Gevonden details met 'Connector' en 'Conector_pin', of None als niets wordt gevonden.
+        """
+        for connector, pins in data_io.items():
+            for pin in pins:
+                if int(pin['mcp_adress']) == mcp_address and int(pin['mcp_pin']) == mcp_pin:
+                    return {"Connector": connector, "Conector_pin": pin['Conector_pin']}
+        return None
+
+
+
+    async def test_different_components(self, tested_mark, tested_terminal, mcps, input_pin):
+        logger.debug(f"Starten met het testen van andere componenten voor mark: {tested_mark}, terminal: {tested_terminal}"), 
+
+        # Loop door alle MCP modules
+        logger.debug("Looping door alle MCP modules")
+        logger.debug(f"mcps: {mcps}")
+        logger.debug(f"mcp: {mcps.items()}")
+        for mcp_address, mcp in mcps.items():
+            logger.debug(f"Controleren MCP module op adres {mcp_address}")
+            for pin_number in range(16):  # MCP23017 heeft 16 pinnen
+                if mcp_address == 26 and pin_number == 0:
+                    continue
+                test_pin = mcp.get_pin(pin_number)
+                test_pin.direction = Direction.OUTPUT
+                
+                # Zet de pin hoog
+                test_pin.value = True
+                await asyncio.sleep(0.1)  # Kleine vertraging om het signaal te stabiliseren
+                
+                # Controleer de input
+                if input_pin.value:
+                    logger.debug(f"Verbonden component gevonden op MCP {mcp_address}, pin {pin_number}")
+                    
+                    # Zet pin weer laag
+                    test_pin.value = False
+                    test_pin.direction = Direction.INPUT
+                    
+                    # Return de gevonden verbinding en stop de test
+                    return mcp_address, pin_number
+
+                # Zet pin weer laag
+                test_pin.value = False
+                test_pin.direction = Direction.INPUT
+
+        logger.debug("Geen andere verbonden componenten gevonden")
+        return None, None
+
 # Rest van je script blijft hetzelfde
 
 # Hieronder je Prompt en MyScreen classes (die blijven ongewijzigd)
 
 class Prompt(ModalScreen[bool]):
-    DEFAULT_CSS = """
-    Prompt {
-        align: center middle;
-    }
+    CSS_PATH = "prompt.tcss"
 
-    Prompt > Container {
-        width: 70;
-        height: auto;
-        border: thick $background 80%;
-        background: $surface;
-    }
-
-    Prompt > Container > Label {
-        width: 100%;
-        content-align-horizontal: center;
-        margin-top: 1;
-    }
-
-    Prompt > Container > Static#timer {
-        content-align-horizontal: center;
-        margin-top: 1;
-        color: red;
-    }
-
-    Prompt > Container > Static#response {
-        width: 100%;
-        height: 3;
-        content-align-horizontal: center;
-        content-align-vertical: middle;
-        margin-top: 1;
-    }
-    """
-
-    def __init__(self, prompt: str, duration: int, **kwargs) -> None:
+    def __init__(self,title: str, prompt: str, duration: int, **kwargs) -> None:
         super().__init__(**kwargs)
+        self.title = title
         self.prompt = prompt
         self.true_false = "False"
         self.timer_label = None
@@ -187,6 +224,7 @@ class Prompt(ModalScreen[bool]):
 
     def compose(self) -> ComposeResult:
         with Container():
+            yield Label(self.title, id="title")
             yield Label(self.prompt, id="question")
             yield Static("", id="timer")  # Timer label
             yield Static(self.true_false, id="response")
@@ -201,7 +239,7 @@ class Prompt(ModalScreen[bool]):
     def update_timer(self) -> None:
         remaining_time = self.end_time - datetime.now()
         if remaining_time.total_seconds() <= 0:
-            self.dismiss(False)
+            pass
         else:
             self.timer_label.update(f"Time left: {int(remaining_time.total_seconds())}s")
 

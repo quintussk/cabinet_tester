@@ -5,10 +5,37 @@
         "21C1": [],
         "21C2": [],
         "19C1": [],
-        "17C1": [],
+        "17C1": [
+            {
+                "terminal": "1",
+                "passed": false,
+                "answer": "Different kabel connected to this terminal, kabel from connector 10CON1 with pin 3 is connected"
+            },
+            {
+                "terminal": "2",
+                "passed": false,
+                "answer": "Different kabel connected to this terminal, kabel from connector 10CON1 with pin 3 is connected"
+            },
+            {
+                "terminal": "3",
+                "passed": false,
+                "answer": "Different kabel connected to this terminal, kabel from connector 10CON1 with pin 3 is connected"
+            }
+        ],
         "16C1": [],
         "8C1": [],
         "20C1": [],
-        "20C2": []
+        "20C2": [
+            {
+                "terminal": "3",
+                "passed": false,
+                "answer": "Different kabel connected to this terminal, kabel from connector 10CON1 with pin 3 is connected"
+            },
+            {
+                "terminal": "4",
+                "passed": false,
+                "answer": "Different kabel connected to this terminal, kabel from connector 10CON1 with pin 3 is connected"
+            }
+        ]
     }
 }
