@@ -1,13 +1,14 @@
-Prompt {
-    align: center middle;
+ModalScreen {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrond */
 }
 
 Prompt > Container {
+    background: $surface;
+    border: thick $background 80%;
+    padding: 1 1;
     width: 70;
     height: auto;
-    border: thick $background 100%;
-    background: $surface;
-    padding: 1 1;
+    align: center middle;
 }
 
 Prompt > Container > Label#question{
@@ -38,4 +39,5 @@ Prompt > Container > Static#response {
     content-align-horizontal: center;
     content-align-vertical: middle;
     margin-top: 1;
+
 }

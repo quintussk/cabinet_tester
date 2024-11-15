@@ -5,6 +5,7 @@ from textual.app import App, ComposeResult
 from textual.containers import Container, Horizontal
 from textual.screen import ModalScreen
 from textual.widgets import Button, Label, Static
+from textual import events
 
 import logging
 
@@ -12,130 +13,79 @@ logging.getLogger(__name__)
 logger = logging.getLogger(__name__)
 
 class Prompt(ModalScreen[bool]):
-    DEFAULT_CSS = """
-    Prompt {
-        align: center middle;
-    }
+    CSS_PATH = "prompt.tcss"
 
-    Prompt > Container {
-        width: 50;
-        height: auto;
-        border: thick $background 80%;
-        background: $surface;
-    }
-
-    Prompt > Container > Label {
-        width: 100%;
-        content-align-horizontal: center;
-        margin-top: 1;
-    }
-
-    Prompt > Container > Static#timer {
-        content-align-horizontal: center;
-        margin-top: 1;
-        color: red;
-    }
-
-    Prompt > Container > Static#response {
-        width: 100%;
-        height: 3;
-        content-align-horizontal: center;
-        content-align-vertical: middle;
-        margin-top: 1;
-    }
-    """
-
-    def __init__(self, prompt: str, duration: int, **kwargs) -> None:
+    def __init__(self, title: str, prompt: str, duration: int, **kwargs) -> None:
         super().__init__(**kwargs)
+        self.title = title
         self.prompt = prompt
         self.true_false = "False"
         self.timer_label = None
         self.end_time = datetime.now() + timedelta(seconds=duration)
         self.timer_task = None
+        self.result = asyncio.Future()
 
     def compose(self) -> ComposeResult:
         with Container():
+            yield Label(self.title, id="title")
             yield Label(self.prompt, id="question")
             yield Static("", id="timer")  # Timer label
             yield Static(self.true_false, id="response")
-
 
     async def on_mount(self) -> None:
         self.timer_label = self.query_one("#timer", Static)
         self.timer_task = self.set_interval(1, self.update_timer)
         self.response_container = self.query_one("#response", Static)
-        self.updateContainer(False)
+        self.updateContainer(False,False)
         self.update_timer()
 
     def update_timer(self) -> None:
         remaining_time = self.end_time - datetime.now()
         if remaining_time.total_seconds() <= 0:
-            self.dismiss(False)
+            pass
         else:
             self.timer_label.update(f"Time left: {int(remaining_time.total_seconds())}s")
 
-    async def on_button_pressed(self, event: Button.Pressed) -> None:
-        if event.button.id == "yes":
-            self.true_false = "True"
+    async def on_key(self, event: events.Key) -> None:
+        if event.key == "y":
             self.updateContainer(True)
-            self.response_container.update(self.true_false)
-        elif event.button.id == "no":
-            self.true_false = "False"
+            self.dismiss(True)
+        elif event.key == "n":
             self.updateContainer(False)
-            self.response_container.update(self.true_false)
+            self.dismiss(False)
 
-    async def on_dismiss(self) -> None:
+    async def on_dismiss(self, result: bool = False) -> None:
         if self.timer_task:
             self.timer_task.cancel()
+        if not self.result.done():
+            self.result.set_result(result)
 
-    def updateContainer(self, state) -> None:
+    def updateContainer(self, state, state_2) -> None:
         if state:
+            self.response_container.update("True")
             self.response_container.styles.background = "green"
+        elif state_2:
+            self.response_container.update("                Keep the probe on the terminal!                          .          Checking other connectors to this terminal")
+            self.response_container.styles.background = "orange"
         else:
+            self.response_container.update("False")
             self.response_container.styles.background = "red"
 
+    def update_container_color(self, color: str) -> None:
+        """Method to update the container color from outside the class."""
+        container = self.query_one(Container)
+        container.styles.background = color
+
 class HasPrompt:
-    async def prompt(self, prompt: str, duration: int) -> bool:
-        event = asyncio.Event()
-        result = None
-
-        def check_result(prompt_response: bool) -> None:
-            nonlocal result
-            nonlocal event
-            result = prompt_response
-            event.set()
-
-        await asyncio.gather(
-            self.push_screen(Prompt(prompt, duration), check_result),
-            event.wait(),
-        )
-
-        if result is None:
-            raise RuntimeError("Prompt was dismissed without a result")
-        return result
+    async def prompt(self, title: str, prompt: str, duration: int):
+        self.prompt_instance = Prompt(title=title, prompt=prompt, duration=duration)
+        await self.push_screen(self.prompt_instance)
 
     async def push_screen(self, *args, **kwargs):
         raise NotImplementedError
+    
+    async def updateconatiner(self, state, state_2):
+        self.prompt_instance.updateContainer(state,state_2)
 
-if __name__ == "__main__":
-    from textual import on
-    from textual.screen import Screen
-    from textual.widgets import Button, Header, Static
-
-    class MyScreen(Screen):
-        def compose(self) -> ComposeResult:
-            yield Header()
-            yield Button("Prompt", id="prompt")
-            yield Static(id="result")
-
-        @on(Button.Pressed, "#prompt")
-        async def on_prompt_pressed(self, event: Button.Pressed) -> None:
-            result_widget = self.query_one("#result", Static)
-            await self.app.prompt("Do you agree?", 10)  # Geeft de prompttekst en duur (in seconden)
-
-    class MyApp(App, HasPrompt):  # MyApp now has a 'prompt' method via HasPrompt trait
-        def compose(self) -> ComposeResult:
-            yield MyScreen()
-
-    app = MyApp()
-    MyApp().run()
+    async def dismiss(self):
+        await self.prompt_instance.dismiss()

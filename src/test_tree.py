@@ -27,7 +27,6 @@ class TestTree(Container):
     # CSS_PATH = "test_tree.tcss"
     DEFAULT_CSS = ''
     selected_node = ""
-    test_time = 30  # Initial test time in seconds
 
     def __init__(self, testers, selected_scheme):
         super().__init__()
@@ -78,7 +77,7 @@ class TestTree(Container):
             Horizontal(
                 Button("+ 5s", id="plus"),
                 Button("- 5s", id="minus"),
-                Static(f"Test time: {self.test_time}s", id="test_time"),
+                Static(f"Test time: {self.app.test_time}s", id="test_time"),
                 id="right-buttons"
             ),
             id="horizontal_tree"
@@ -101,7 +100,7 @@ class TestTree(Container):
         logger.debug(self.selected_node)
         logger.debug(self.app)
         tester = RunTest(app=self.app)
-        await tester.run(self.selected_node, self.json_file,test_time=self.test_time)
+        await tester.run(self.selected_node, self.json_file,test_time=self.app.test_time)
         self.redraw()
 
     @on(Button.Pressed, "#clear_project")
@@ -121,17 +120,17 @@ class TestTree(Container):
 
     @on(Button.Pressed, "#plus")
     async def increase_test_time(self, event: Button.Pressed) -> None:
-        self.test_time += 5
+        self.app.test_time += 5
         self.update_test_time_display()
 
     @on(Button.Pressed, "#minus")
     async def decrease_test_time(self, event: Button.Pressed) -> None:
-        self.test_time = max(0, self.test_time - 5)  # Prevent negative time
+        self.app.test_time = max(0, self.app.test_time - 5)  # Prevent negative time
         self.update_test_time_display()
 
     def update_test_time_display(self):
         test_time_display = self.query_one("#test_time", Static)
-        test_time_display.update(f"Test time: {self.test_time}s")
+        test_time_display.update(f"Test time: {self.app.test_time}s")
 
     def redraw(self):       
         parent = self.parent

@@ -74,3 +74,6 @@ class BaseTest(BaseModel, arbitrary_types_allowed=True):
 
         with open(json_file_path, 'w') as file:
             json.dump(data, file, indent=4)
+
+    async def prompt(self, title: str,  prompt: str, duration: int):
+        await self.app.prompt(title=title, prompt=prompt, duration=duration)

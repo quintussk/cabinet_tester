@@ -18,7 +18,7 @@ from Tester import TestScreen
 from test_tree import TestTree
 from create_test_project import CreateProject
 
-from run_test import HasPrompt
+from pop_up import HasPrompt
 
 class LoggingConsole(RichLog):
     file = False
@@ -67,12 +67,13 @@ class Options(Container):
         self.selected_scheme = new_scheme
         self.response_static.update(f"Selected Scheme: {self.selected_scheme}")
 
-class CableApp(App[None]):
+class CableApp(App[None], HasPrompt):
     CSS_PATH = "main.tcss"
     TITLE = "Electrical cabinet tester"
     SUB_TITLE = "V1"
     selected_label = ""
     selected_scheme = "S25"
+    test_time = 30  # Initial test time in seconds
 
     def compose(self) -> ComposeResult:
         yield Header()

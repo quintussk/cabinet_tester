@@ -101,8 +101,9 @@ class RunTest(BaseTest):
                         continue
 
                     # Create a prompt instance
-                    prompt_instance = Prompt(title=f"Testing; {test} connector" ,prompt=f"Mark: {to_mark} ({to_part}); terminal: {to_terminal} ", duration=test_time)
-                    await self.app.push_screen(prompt_instance)
+                    await self.app.prompt(title=f"Testing; {test} connector" ,prompt=f"Mark: {to_mark} ({to_part}); terminal: {to_terminal} ", duration=test_time)
+                    # prompt_instance = Prompt(title=f"Testing; {test} connector" ,prompt=f"Mark: {to_mark} ({to_part}); terminal: {to_terminal} ", duration=test_time)
+                    # await self.app.push_screen(prompt_instance)
 
                     # Simulate a test with a delay
                     start_time = asyncio.get_event_loop().time()
@@ -118,28 +119,29 @@ class RunTest(BaseTest):
                         if input_pin.value:
                             output_pin.value = False
                             output_pin.direction = Direction.INPUT
-                            prompt_instance.updateContainer(True)
+                            await self.app.updateconatiner(True,False)
                             self.add_result(from_terminal, True, to_mark, to_terminal)
                             break
                         
-                        # if elapsed_time >= 10:
-                        #     output_pin.value = False
-                        #     output_pin.direction = Direction.INPUT
-                        #     mcp_address, pin_number = await self.test_different_components(tested_mark=to_mark, tested_terminal=to_terminal, mcps=mcps, input_pin=input_pin)
-                        #     logger.debug(f"Returned mcp_address: {mcp_address}, pin_number: {pin_number}")
-                        #     if mcp_address is not None:
-                        #         gevonden_details = self.zoek_connector(data_io, mcp_address, pin_number)
-                        #         logger.debug(f"Verbonden component: {gevonden_details}")
-                        #         self.add_result_different_terminal(from_terminal, False, gevonden_details)
-                        #     else:
-                        #         self.add_result(from_terminal, False, to_mark, to_terminal)
+                        if elapsed_time >= test_time:
+                            output_pin.value = False
+                            output_pin.direction = Direction.INPUT
+                            await self.app.updateconatiner(False,True)
+                            mcp_address, pin_number = await self.test_different_components(tested_mark=to_mark, tested_terminal=to_terminal, mcps=mcps, input_pin=input_pin)
+                            logger.debug(f"Returned mcp_address: {mcp_address}, pin_number: {pin_number}")
+                            if mcp_address is not None:
+                                gevonden_details = self.zoek_connector(data_io, mcp_address, pin_number)
+                                logger.debug(f"Verbonden component: {gevonden_details}")
+                                self.add_result_different_terminal(from_terminal, False, gevonden_details)
+                            else:
+                                self.add_result(from_terminal, False, to_mark, to_terminal)
                             
-                        #     break
+                            break
 
                         await asyncio.sleep(0.5)
 
                     await asyncio.sleep(2)
-                    await prompt_instance.dismiss()
+                    await self.app.dismiss()
 
                     logger.debug(f"From terminal: {from_terminal}, To part: {to_part}, To mark: {to_mark}, To terminal: {to_terminal}")
             
@@ -208,102 +210,3 @@ class RunTest(BaseTest):
 # Rest van je script blijft hetzelfde
 
 # Hieronder je Prompt en MyScreen classes (die blijven ongewijzigd)
-
-class Prompt(ModalScreen[bool]):
-    CSS_PATH = "prompt.tcss"
-
-    def __init__(self,title: str, prompt: str, duration: int, **kwargs) -> None:
-        super().__init__(**kwargs)
-        self.title = title
-        self.prompt = prompt
-        self.true_false = "False"
-        self.timer_label = None
-        self.end_time = datetime.now() + timedelta(seconds=duration)
-        self.timer_task = None
-        self.result = asyncio.Future()
-
-    def compose(self) -> ComposeResult:
-        with Container():
-            yield Label(self.title, id="title")
-            yield Label(self.prompt, id="question")
-            yield Static("", id="timer")  # Timer label
-            yield Static(self.true_false, id="response")
-
-    async def on_mount(self) -> None:
-        self.timer_label = self.query_one("#timer", Static)
-        self.timer_task = self.set_interval(1, self.update_timer)
-        self.response_container = self.query_one("#response", Static)
-        self.updateContainer(False)
-        self.update_timer()
-
-    def update_timer(self) -> None:
-        remaining_time = self.end_time - datetime.now()
-        if remaining_time.total_seconds() <= 0:
-            pass
-        else:
-            self.timer_label.update(f"Time left: {int(remaining_time.total_seconds())}s")
-
-    async def on_key(self, event: events.Key) -> None:
-        if event.key == "y":
-            self.updateContainer(True)
-            self.dismiss(True)
-        elif event.key == "n":
-            self.updateContainer(False)
-            self.dismiss(False)
-
-    async def on_dismiss(self, result: bool = False) -> None:
-        if self.timer_task:
-            self.timer_task.cancel()
-        if not self.result.done():
-            self.result.set_result(result)
-
-    def updateContainer(self, state) -> None:
-        if state:
-            self.response_container.update("True")
-            self.response_container.styles.background = "green"
-        else:
-            self.response_container.update("False")
-            self.response_container.styles.background = "red"
-
-    def update_container_color(self, color: str) -> None:
-        """Method to update the container color from outside the class."""
-        container = self.query_one(Container)
-        container.styles.background = color
-
-class HasPrompt:
-    async def prompt(self, prompt: str, duration: int) -> bool:
-        prompt_instance = Prompt(prompt, duration)
-        await self.push_screen(prompt_instance)
-        return await prompt_instance.result
-
-    async def push_screen(self, *args, **kwargs):
-        raise NotImplementedError
-
-if __name__ == "__main__":
-    from textual import on
-    from textual.screen import Screen
-    from textual.widgets import Button, Header, Static
-
-    class MyScreen(Screen):
-        def compose(self) -> ComposeResult:
-            yield Header()
-            yield Button("Run Test", id="run_test")
-            yield Static(id="result")
-
-        async def on_key(self, event: events.Key) -> None:
-            prompt_screen = self.app.screen_stack[-1]
-            if isinstance(prompt_screen, Prompt):
-                await prompt_screen.on_key(event)
-
-        @on(Button.Pressed, "#run_test")
-        async def on_run_test_pressed(self, event: Button.Pressed) -> None:
-            self.json_file = Path(__file__).parent.parent / "test_results/test_results.json"
-            tester = RunTest(app=self.app)
-            await tester.run("10CON1", self.json_file)
-
-    class MyApp(App, HasPrompt):  # MyApp now has a 'prompt' method via HasPrompt trait
-        def compose(self) -> ComposeResult:
-            yield MyScreen()
-
-    app = MyApp()
-    app.run()
