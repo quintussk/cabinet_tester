@@ -12,13 +12,13 @@
         "20C2": [
             {
                 "terminal": "3",
-                "passed": true,
-                "answer": "Should go to mark: C20.2 and terminal 4"
+                "passed": false,
+                "answer": "A different cable is connected to this terminal. The cable from connector 10CON1, pin 3, is currently connected. This cable should be routed to mark: 6A1 and terminal: DI a.6."
             },
             {
                 "terminal": "4",
-                "passed": true,
-                "answer": "Should go to mark: C20.2 and terminal 2"
+                "passed": false,
+                "answer": "A different cable is connected to this terminal. The cable from connector 10CON1, pin 3, is currently connected. This cable should be routed to mark: 6A1 and terminal: DI a.6."
             }
         ]
     }

@@ -25,7 +25,6 @@ class RunTest(BaseTest):
     async def run(self, test, test_data_path, test_time):
         i2c = busio.I2C(board.SCL, board.SDA)
         mcps = {
-            
             26: MCP.MCP23017(i2c, address=0x26),
             25: MCP.MCP23017(i2c, address=0x25),
             24: MCP.MCP23017(i2c, address=0x24),
@@ -102,8 +101,6 @@ class RunTest(BaseTest):
 
                     # Create a prompt instance
                     await self.app.prompt(title=f"Testing; {test} connector" ,prompt=f"Mark: {to_mark} ({to_part}); terminal: {to_terminal} ", duration=test_time)
-                    # prompt_instance = Prompt(title=f"Testing; {test} connector" ,prompt=f"Mark: {to_mark} ({to_part}); terminal: {to_terminal} ", duration=test_time)
-                    # await self.app.push_screen(prompt_instance)
 
                     # Simulate a test with a delay
                     start_time = asyncio.get_event_loop().time()
@@ -130,7 +127,7 @@ class RunTest(BaseTest):
                             mcp_address, pin_number = await self.test_different_components(tested_mark=to_mark, tested_terminal=to_terminal, mcps=mcps, input_pin=input_pin)
                             logger.debug(f"Returned mcp_address: {mcp_address}, pin_number: {pin_number}")
                             if mcp_address is not None:
-                                gevonden_details = self.zoek_connector(data_io, mcp_address, pin_number)
+                                gevonden_details = self.zoek_connector(data_io, data, mcp_address, pin_number)
                                 logger.debug(f"Verbonden component: {gevonden_details}")
                                 self.add_result_different_terminal(from_terminal, False, gevonden_details)
                             else:
@@ -150,25 +147,34 @@ class RunTest(BaseTest):
         else:
             logger.debug(f"Test '{test}' not found in the JSON.")
 
-    def zoek_connector(self,data_io, mcp_address, mcp_pin):
+    def zoek_connector(self, data_io, data, mcp_address, mcp_pin):
         """
         Zoek de connector details op basis van MCP-adres en pin-nummer.
 
         Parameters:
             data_io (dict): De JSON data met IO informatie.
+            data (dict): De JSON data met component antwoorden.
             mcp_address (int): Het MCP-adres.
             mcp_pin (int): Het pin-nummer op de MCP.
 
         Returns:
-            dict: Gevonden details met 'Connector' en 'Conector_pin', of None als niets wordt gevonden.
+            dict: Gevonden details met 'Connector', 'Conector_pin', 'to_part', 'to_mark', en 'to_terminal', of None als niets wordt gevonden.
         """
         for connector, pins in data_io.items():
             for pin in pins:
                 if int(pin['mcp_adress']) == mcp_address and int(pin['mcp_pin']) == mcp_pin:
-                    return {"Connector": connector, "Conector_pin": pin['Conector_pin']}
+                    # Zoek in de data file waar deze connector eigenlijk heen zou moeten gaan
+                    for test, terminals in data.items():
+                        for terminal in terminals:
+                            if terminal['from_terminal'] == pin['Conector_pin']:
+                                return {
+                                    "Connector": connector,
+                                    "Conector_pin": pin['Conector_pin'],
+                                    "to_part": terminal['to_part'],
+                                    "to_mark": terminal['to_mark'],
+                                    "to_terminal": terminal['to_terminal']
+                                }
         return None
-
-
 
     async def test_different_components(self, tested_mark, tested_terminal, mcps, input_pin):
         logger.debug(f"Starten met het testen van andere componenten voor mark: {tested_mark}, terminal: {tested_terminal}"), 

@@ -36,13 +36,15 @@ class BaseTest(BaseModel, arbitrary_types_allowed=True):
 
     def add_result_different_terminal(self, terminal, passes: bool, gevonden_details):
         """Voegt een testresultaat toe aan de resultatenlijst."""
-        conector = gevonden_details["Connector"]
-        conector_pin = gevonden_details["Conector_pin"]
+        connector = gevonden_details["Connector"]
+        connector_pin = gevonden_details["Conector_pin"]
+        to_mark = gevonden_details["to_mark"]
+        to_terminal = gevonden_details["to_terminal"]
         subtest = SubTest(
             title=f"Test for terminal {terminal}",
             terminal=terminal,
             passes=passes,
-            answer=f"Different kabel connected to this terminal, kabel from connector {conector} with pin {conector_pin} is connected" 
+            answer=f"A different cable is connected to this terminal. The cable from connector {connector}, pin {connector_pin}, is currently connected. This cable should be routed to mark: {to_mark} and terminal: {to_terminal}."
         )
         self.results.append(subtest)
 
